@@ -6,6 +6,7 @@
 // as a result of an error) and be able to process any receipts collected.
 class ReferenceDelegate: RoverDelegate, ObservableObject {
     override func roverDidFinish(sessionUUID: String,
+    									resultsGzip: Data,
 	                              error: String?,
                                  verboseError: String?) {
         if let error = error {
@@ -39,7 +40,8 @@ let date = Date(timeIntervalSinceNow: -60*60*24*365*1)
 
 Rover.shared.collect(merchantId: merchantId,
                      fromDate: date,
-                      delegate: delegate)
+                     isEphemeral: false,
+                     delegate: delegate)
 
 ```
 
