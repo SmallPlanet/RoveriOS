@@ -50,7 +50,7 @@ Rover.shared.collect(merchantId: merchantId,
 
 ### Swift Package Manager
 
-To use Rover As a Swift Package Manager depenency simply add it to the dependencies section of your Package.swift and as a dependency to the specific target.
+To use Rover As a Swift Package Manager dependency simply add it to the dependencies section of your Package.swift and as a dependency to the specific target.
 
 ```swift
 dependencies: [
