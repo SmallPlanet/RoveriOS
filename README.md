@@ -83,3 +83,7 @@ RoveriOS is distributed as an XCFramework, which is located in the root of this 
 Clear the following dialog and then go to your target's General settings.  In the **Frameworks, Libraries, and Embedded Content** section ensure **RoveriOS.xcframework** is present and it is set to **Embed & Sign**
 
 ![](meta/select_embed.png)
+
+
+
+Latest version: v0.2.68
