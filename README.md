@@ -86,4 +86,4 @@ Clear the following dialog and then go to your target's General settings.  In th
 
 
 
-Latest version: v0.2.69
+Latest version: v0.2.70
