@@ -11,6 +11,7 @@ class ReferenceDelegate: RoverDelegate, ObservableObject {
     override func roverDidFinish(sessionUUID: String,
     									resultsGzip: Data,
 	                              error: String?,
+	                              userError: String?,
                                  verboseError: String?) {
         if let error = error {
             print("RoverDelegate: [\(sessionUUID)] finished with error: \(error)")
@@ -86,4 +87,4 @@ Clear the following dialog and then go to your target's General settings.  In th
 
 
 
-Latest version: v0.2.70
+Latest version: v0.2.71
