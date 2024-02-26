@@ -1,0 +1,4 @@
+framework module RoveriOS {
+  header "RoveriOS-Swift.h"
+  requires objc
+}
