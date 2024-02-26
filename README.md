@@ -118,4 +118,4 @@ Clear the following dialog and then go to your target's General settings.  In th
 
 
 
-Latest version: v0.3.10
+Latest version: v0.3.11
