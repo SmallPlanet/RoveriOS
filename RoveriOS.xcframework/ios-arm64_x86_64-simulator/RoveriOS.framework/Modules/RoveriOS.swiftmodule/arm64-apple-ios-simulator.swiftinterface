@@ -25,10 +25,11 @@ public struct Merchant : Swift.Codable {
   public let name: Swift.String
   public let category: Swift.String?
   public let subcategory: Swift.String?
+  public let locales: Swift.String?
   public let version: Swift.Int
   public let logoLight: Swift.String?
   public let logoDark: Swift.String?
-  public init(merchantId: Swift.Int, name: Swift.String, category: Swift.String?, subcategory: Swift.String?, version: Swift.Int, logoLight: Swift.String?, logoDark: Swift.String?)
+  public init(merchantId: Swift.Int, name: Swift.String, category: Swift.String?, subcategory: Swift.String?, locales: Swift.String?, version: Swift.Int, logoLight: Swift.String?, logoDark: Swift.String?)
   public func encode(to encoder: any Swift.Encoder) throws
   public init(from decoder: any Swift.Decoder) throws
 }
