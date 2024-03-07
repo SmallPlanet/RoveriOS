@@ -16,8 +16,9 @@ public struct Connection : Swift.Codable {
   public let cookiesBase64: Swift.String?
   public let fromDate: Foundation.Date?
   public let appInfo: Swift.String?
+  public let featureFlags: [Swift.String]?
   public let userInteractionRequired: Swift.Bool
-  public init(merchantId: Swift.Int, account: Swift.String, password: Swift.String?, cookiesBase64: Swift.String?, fromDate: Foundation.Date?, appInfo: Swift.String?, userInteractionRequired: Swift.Bool)
+  public init(merchantId: Swift.Int, account: Swift.String, password: Swift.String?, cookiesBase64: Swift.String?, fromDate: Foundation.Date?, appInfo: Swift.String?, featureFlags: [Swift.String]?, userInteractionRequired: Swift.Bool)
   public func encode(to encoder: any Swift.Encoder) throws
   public init(from decoder: any Swift.Decoder) throws
 }
