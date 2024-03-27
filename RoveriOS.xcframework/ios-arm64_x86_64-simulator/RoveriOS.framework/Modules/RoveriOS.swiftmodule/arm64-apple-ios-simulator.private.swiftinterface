@@ -34,6 +34,19 @@ public struct Merchant : Swift.Codable {
   public func encode(to encoder: any Swift.Encoder) throws
   public init(from decoder: any Swift.Decoder) throws
 }
+public enum InternalMerchantId : Swift.Int, Swift.Codable, Swift.CaseIterable {
+  case global
+  case info
+  public init?(rawValue: Swift.Int)
+  public typealias AllCases = [RoveriOS.InternalMerchantId]
+  public typealias RawValue = Swift.Int
+  public static var allCases: [RoveriOS.InternalMerchantId] {
+    get
+  }
+  public var rawValue: Swift.Int {
+    get
+  }
+}
 public enum MerchantId : Swift.Int, Swift.Codable, Swift.CaseIterable {
   case gmail
   case yahoo
@@ -112,6 +125,8 @@ public class ScrapeStatus : Swift.Codable {
   public var unknownReceipts: Swift.Int
   public var errorReceipts: Swift.Int
   public var elapsedSeconds: Swift.Int
+  public var jsProcessingTimeTier2: Swift.Double
+  public var jsProcessingTimeTier3: Swift.Double
   public init(sessionUUID: Swift.String, progress: Swift.Double, error: Swift.String?, verboseError: Swift.String?)
   public init(sessionUUID: Swift.String)
   public init()
@@ -217,6 +232,7 @@ public struct Receipt : Swift.Codable {
   public var duplicationId: Swift.String?
   public var receiptId: Swift.String?
   public var receiptDomain: Swift.String?
+  public var receiptFormat: Swift.String?
   public var error: Swift.String?
   public var validationError: Swift.String?
   public var storeName: Swift.String?
@@ -335,6 +351,9 @@ public enum Pamphlet {
   public static func get(gzip member: Swift.String) -> Foundation.Data?
   public static func get(data member: Swift.String) -> Foundation.Data?
 }
+extension RoveriOS.InternalMerchantId : Swift.Equatable {}
+extension RoveriOS.InternalMerchantId : Swift.Hashable {}
+extension RoveriOS.InternalMerchantId : Swift.RawRepresentable {}
 extension RoveriOS.MerchantId : Swift.Equatable {}
 extension RoveriOS.MerchantId : Swift.Hashable {}
 extension RoveriOS.MerchantId : Swift.RawRepresentable {}
