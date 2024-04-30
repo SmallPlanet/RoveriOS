@@ -230,6 +230,7 @@ public struct ReceiptItem : Swift.Codable {
   public init(from decoder: any Swift.Decoder) throws
 }
 public struct Receipt : Swift.Codable {
+  public var roverUserId: Swift.String?
   public var duplicationId: Swift.String?
   public var receiptId: Swift.String?
   public var receiptDomain: Swift.String?
