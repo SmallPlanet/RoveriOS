@@ -78,6 +78,10 @@ public enum MerchantId : Swift.Int, Swift.Codable, Swift.CaseIterable {
   case bcbsca
   case deltadental
   case guardiandental
+  case mtsinai
+  case nyp
+  case expressScripts
+  case cvsCaremark
   case eyemed
   case wolfe0
   case netflix
@@ -122,6 +126,11 @@ public class ScrapeStatus : Swift.Codable {
   public var serviceGroupStatus: [RoveriOS.ScrapeServiceGroupStatus]
   public var tagLog: [Swift.String]
   public var userTag: Swift.String
+  public var serverInteractionRequired: Swift.Bool
+  public var sirUUID: Swift.String?
+  public var sirTag: Swift.String?
+  public var sirType: Swift.String?
+  public var sirChoices: [Swift.String]?
   public var successReceipts: Swift.Int
   public var unknownReceipts: Swift.Int
   public var errorReceipts: Swift.Int
@@ -231,6 +240,8 @@ public struct ReceiptItem : Swift.Codable {
 }
 public struct Receipt : Swift.Codable {
   public var roverUserId: Swift.String?
+  public var roverAccountId: Swift.String?
+  public var roverSessionUUID: Swift.String?
   public var duplicationId: Swift.String?
   public var receiptId: Swift.String?
   public var receiptDomain: Swift.String?
