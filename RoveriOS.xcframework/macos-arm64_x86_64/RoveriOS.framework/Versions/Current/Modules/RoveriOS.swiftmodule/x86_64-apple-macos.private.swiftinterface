@@ -82,6 +82,8 @@ public enum MerchantId : Swift.Int, Swift.Codable, Swift.CaseIterable {
   case nyp
   case expressScripts
   case cvsCaremark
+  case nyulmc
+  case progyny
   case eyemed
   case wolfe0
   case netflix
@@ -239,6 +241,7 @@ public struct ReceiptItem : Swift.Codable {
   public init(from decoder: any Swift.Decoder) throws
 }
 public struct Receipt : Swift.Codable {
+  public var roverMerchantId: Swift.Int?
   public var roverUserId: Swift.String?
   public var roverAccountId: Swift.String?
   public var roverSessionUUID: Swift.String?
