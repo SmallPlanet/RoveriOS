@@ -16063,6 +16063,228 @@
           },
           {
             "kind": "Var",
+            "name": "deviceLocale",
+            "printedName": "deviceLocale",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:8RoveriOS7ReceiptV12deviceLocaleSSSgvp",
+            "mangledName": "$s8RoveriOS7ReceiptV12deviceLocaleSSSgvp",
+            "moduleName": "RoveriOS",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8RoveriOS7ReceiptV12deviceLocaleSSSgvg",
+                "mangledName": "$s8RoveriOS7ReceiptV12deviceLocaleSSSgvg",
+                "moduleName": "RoveriOS",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8RoveriOS7ReceiptV12deviceLocaleSSSgvs",
+                "mangledName": "$s8RoveriOS7ReceiptV12deviceLocaleSSSgvs",
+                "moduleName": "RoveriOS",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8RoveriOS7ReceiptV12deviceLocaleSSSgvM",
+                "mangledName": "$s8RoveriOS7ReceiptV12deviceLocaleSSSgvM",
+                "moduleName": "RoveriOS",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "deviceTimezone",
+            "printedName": "deviceTimezone",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:8RoveriOS7ReceiptV14deviceTimezoneSSSgvp",
+            "mangledName": "$s8RoveriOS7ReceiptV14deviceTimezoneSSSgvp",
+            "moduleName": "RoveriOS",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8RoveriOS7ReceiptV14deviceTimezoneSSSgvg",
+                "mangledName": "$s8RoveriOS7ReceiptV14deviceTimezoneSSSgvg",
+                "moduleName": "RoveriOS",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8RoveriOS7ReceiptV14deviceTimezoneSSSgvs",
+                "mangledName": "$s8RoveriOS7ReceiptV14deviceTimezoneSSSgvs",
+                "moduleName": "RoveriOS",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8RoveriOS7ReceiptV14deviceTimezoneSSSgvM",
+                "mangledName": "$s8RoveriOS7ReceiptV14deviceTimezoneSSSgvM",
+                "moduleName": "RoveriOS",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
             "name": "error",
             "printedName": "error",
             "children": [
@@ -16624,21 +16846,21 @@
               {
                 "kind": "TypeNominal",
                 "name": "Optional",
-                "printedName": "Foundation.Date?",
+                "printedName": "Swift.String?",
                 "children": [
                   {
                     "kind": "TypeNominal",
-                    "name": "Date",
-                    "printedName": "Foundation.Date",
-                    "usr": "s:10Foundation4DateV"
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
                   }
                 ],
                 "usr": "s:Sq"
               }
             ],
             "declKind": "Var",
-            "usr": "s:8RoveriOS7ReceiptV13collectedDate10Foundation0E0VSgvp",
-            "mangledName": "$s8RoveriOS7ReceiptV13collectedDate10Foundation0E0VSgvp",
+            "usr": "s:8RoveriOS7ReceiptV13collectedDateSSSgvp",
+            "mangledName": "$s8RoveriOS7ReceiptV13collectedDateSSSgvp",
             "moduleName": "RoveriOS",
             "declAttributes": [
               "HasInitialValue",
@@ -16656,21 +16878,21 @@
                   {
                     "kind": "TypeNominal",
                     "name": "Optional",
-                    "printedName": "Foundation.Date?",
+                    "printedName": "Swift.String?",
                     "children": [
                       {
                         "kind": "TypeNominal",
-                        "name": "Date",
-                        "printedName": "Foundation.Date",
-                        "usr": "s:10Foundation4DateV"
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
                       }
                     ],
                     "usr": "s:Sq"
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:8RoveriOS7ReceiptV13collectedDate10Foundation0E0VSgvg",
-                "mangledName": "$s8RoveriOS7ReceiptV13collectedDate10Foundation0E0VSgvg",
+                "usr": "s:8RoveriOS7ReceiptV13collectedDateSSSgvg",
+                "mangledName": "$s8RoveriOS7ReceiptV13collectedDateSSSgvg",
                 "moduleName": "RoveriOS",
                 "implicit": true,
                 "accessorKind": "get"
@@ -16688,21 +16910,21 @@
                   {
                     "kind": "TypeNominal",
                     "name": "Optional",
-                    "printedName": "Foundation.Date?",
+                    "printedName": "Swift.String?",
                     "children": [
                       {
                         "kind": "TypeNominal",
-                        "name": "Date",
-                        "printedName": "Foundation.Date",
-                        "usr": "s:10Foundation4DateV"
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
                       }
                     ],
                     "usr": "s:Sq"
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:8RoveriOS7ReceiptV13collectedDate10Foundation0E0VSgvs",
-                "mangledName": "$s8RoveriOS7ReceiptV13collectedDate10Foundation0E0VSgvs",
+                "usr": "s:8RoveriOS7ReceiptV13collectedDateSSSgvs",
+                "mangledName": "$s8RoveriOS7ReceiptV13collectedDateSSSgvs",
                 "moduleName": "RoveriOS",
                 "implicit": true,
                 "accessorKind": "set"
@@ -16719,8 +16941,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:8RoveriOS7ReceiptV13collectedDate10Foundation0E0VSgvM",
-                "mangledName": "$s8RoveriOS7ReceiptV13collectedDate10Foundation0E0VSgvM",
+                "usr": "s:8RoveriOS7ReceiptV13collectedDateSSSgvM",
+                "mangledName": "$s8RoveriOS7ReceiptV13collectedDateSSSgvM",
                 "moduleName": "RoveriOS",
                 "implicit": true,
                 "accessorKind": "_modify"
@@ -16735,21 +16957,21 @@
               {
                 "kind": "TypeNominal",
                 "name": "Optional",
-                "printedName": "Foundation.Date?",
+                "printedName": "Swift.String?",
                 "children": [
                   {
                     "kind": "TypeNominal",
-                    "name": "Date",
-                    "printedName": "Foundation.Date",
-                    "usr": "s:10Foundation4DateV"
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
                   }
                 ],
                 "usr": "s:Sq"
               }
             ],
             "declKind": "Var",
-            "usr": "s:8RoveriOS7ReceiptV13purchasedDate10Foundation0E0VSgvp",
-            "mangledName": "$s8RoveriOS7ReceiptV13purchasedDate10Foundation0E0VSgvp",
+            "usr": "s:8RoveriOS7ReceiptV13purchasedDateSSSgvp",
+            "mangledName": "$s8RoveriOS7ReceiptV13purchasedDateSSSgvp",
             "moduleName": "RoveriOS",
             "declAttributes": [
               "HasInitialValue",
@@ -16767,21 +16989,21 @@
                   {
                     "kind": "TypeNominal",
                     "name": "Optional",
-                    "printedName": "Foundation.Date?",
+                    "printedName": "Swift.String?",
                     "children": [
                       {
                         "kind": "TypeNominal",
-                        "name": "Date",
-                        "printedName": "Foundation.Date",
-                        "usr": "s:10Foundation4DateV"
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
                       }
                     ],
                     "usr": "s:Sq"
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:8RoveriOS7ReceiptV13purchasedDate10Foundation0E0VSgvg",
-                "mangledName": "$s8RoveriOS7ReceiptV13purchasedDate10Foundation0E0VSgvg",
+                "usr": "s:8RoveriOS7ReceiptV13purchasedDateSSSgvg",
+                "mangledName": "$s8RoveriOS7ReceiptV13purchasedDateSSSgvg",
                 "moduleName": "RoveriOS",
                 "implicit": true,
                 "accessorKind": "get"
@@ -16799,21 +17021,21 @@
                   {
                     "kind": "TypeNominal",
                     "name": "Optional",
-                    "printedName": "Foundation.Date?",
+                    "printedName": "Swift.String?",
                     "children": [
                       {
                         "kind": "TypeNominal",
-                        "name": "Date",
-                        "printedName": "Foundation.Date",
-                        "usr": "s:10Foundation4DateV"
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
                       }
                     ],
                     "usr": "s:Sq"
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:8RoveriOS7ReceiptV13purchasedDate10Foundation0E0VSgvs",
-                "mangledName": "$s8RoveriOS7ReceiptV13purchasedDate10Foundation0E0VSgvs",
+                "usr": "s:8RoveriOS7ReceiptV13purchasedDateSSSgvs",
+                "mangledName": "$s8RoveriOS7ReceiptV13purchasedDateSSSgvs",
                 "moduleName": "RoveriOS",
                 "implicit": true,
                 "accessorKind": "set"
@@ -16830,8 +17052,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:8RoveriOS7ReceiptV13purchasedDate10Foundation0E0VSgvM",
-                "mangledName": "$s8RoveriOS7ReceiptV13purchasedDate10Foundation0E0VSgvM",
+                "usr": "s:8RoveriOS7ReceiptV13purchasedDateSSSgvM",
+                "mangledName": "$s8RoveriOS7ReceiptV13purchasedDateSSSgvM",
                 "moduleName": "RoveriOS",
                 "implicit": true,
                 "accessorKind": "_modify"
@@ -16846,21 +17068,21 @@
               {
                 "kind": "TypeNominal",
                 "name": "Optional",
-                "printedName": "Foundation.Date?",
+                "printedName": "Swift.String?",
                 "children": [
                   {
                     "kind": "TypeNominal",
-                    "name": "Date",
-                    "printedName": "Foundation.Date",
-                    "usr": "s:10Foundation4DateV"
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
                   }
                 ],
                 "usr": "s:Sq"
               }
             ],
             "declKind": "Var",
-            "usr": "s:8RoveriOS7ReceiptV16continuationDate10Foundation0E0VSgvp",
-            "mangledName": "$s8RoveriOS7ReceiptV16continuationDate10Foundation0E0VSgvp",
+            "usr": "s:8RoveriOS7ReceiptV16continuationDateSSSgvp",
+            "mangledName": "$s8RoveriOS7ReceiptV16continuationDateSSSgvp",
             "moduleName": "RoveriOS",
             "declAttributes": [
               "HasInitialValue",
@@ -16878,21 +17100,21 @@
                   {
                     "kind": "TypeNominal",
                     "name": "Optional",
-                    "printedName": "Foundation.Date?",
+                    "printedName": "Swift.String?",
                     "children": [
                       {
                         "kind": "TypeNominal",
-                        "name": "Date",
-                        "printedName": "Foundation.Date",
-                        "usr": "s:10Foundation4DateV"
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
                       }
                     ],
                     "usr": "s:Sq"
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:8RoveriOS7ReceiptV16continuationDate10Foundation0E0VSgvg",
-                "mangledName": "$s8RoveriOS7ReceiptV16continuationDate10Foundation0E0VSgvg",
+                "usr": "s:8RoveriOS7ReceiptV16continuationDateSSSgvg",
+                "mangledName": "$s8RoveriOS7ReceiptV16continuationDateSSSgvg",
                 "moduleName": "RoveriOS",
                 "implicit": true,
                 "accessorKind": "get"
@@ -16910,21 +17132,21 @@
                   {
                     "kind": "TypeNominal",
                     "name": "Optional",
-                    "printedName": "Foundation.Date?",
+                    "printedName": "Swift.String?",
                     "children": [
                       {
                         "kind": "TypeNominal",
-                        "name": "Date",
-                        "printedName": "Foundation.Date",
-                        "usr": "s:10Foundation4DateV"
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
                       }
                     ],
                     "usr": "s:Sq"
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:8RoveriOS7ReceiptV16continuationDate10Foundation0E0VSgvs",
-                "mangledName": "$s8RoveriOS7ReceiptV16continuationDate10Foundation0E0VSgvs",
+                "usr": "s:8RoveriOS7ReceiptV16continuationDateSSSgvs",
+                "mangledName": "$s8RoveriOS7ReceiptV16continuationDateSSSgvs",
                 "moduleName": "RoveriOS",
                 "implicit": true,
                 "accessorKind": "set"
@@ -16941,8 +17163,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:8RoveriOS7ReceiptV16continuationDate10Foundation0E0VSgvM",
-                "mangledName": "$s8RoveriOS7ReceiptV16continuationDate10Foundation0E0VSgvM",
+                "usr": "s:8RoveriOS7ReceiptV16continuationDateSSSgvM",
+                "mangledName": "$s8RoveriOS7ReceiptV16continuationDateSSSgvM",
                 "moduleName": "RoveriOS",
                 "implicit": true,
                 "accessorKind": "_modify"
@@ -19089,21 +19311,21 @@
               {
                 "kind": "TypeNominal",
                 "name": "Optional",
-                "printedName": "Foundation.Date?",
+                "printedName": "Swift.String?",
                 "children": [
                   {
                     "kind": "TypeNominal",
-                    "name": "Date",
-                    "printedName": "Foundation.Date",
-                    "usr": "s:10Foundation4DateV"
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
                   }
                 ],
                 "usr": "s:Sq"
               }
             ],
             "declKind": "Var",
-            "usr": "s:8RoveriOS7ReceiptV25merchantLocalPurchaseDate10Foundation0G0VSgvp",
-            "mangledName": "$s8RoveriOS7ReceiptV25merchantLocalPurchaseDate10Foundation0G0VSgvp",
+            "usr": "s:8RoveriOS7ReceiptV25merchantLocalPurchaseDateSSSgvp",
+            "mangledName": "$s8RoveriOS7ReceiptV25merchantLocalPurchaseDateSSSgvp",
             "moduleName": "RoveriOS",
             "declAttributes": [
               "HasInitialValue",
@@ -19121,21 +19343,21 @@
                   {
                     "kind": "TypeNominal",
                     "name": "Optional",
-                    "printedName": "Foundation.Date?",
+                    "printedName": "Swift.String?",
                     "children": [
                       {
                         "kind": "TypeNominal",
-                        "name": "Date",
-                        "printedName": "Foundation.Date",
-                        "usr": "s:10Foundation4DateV"
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
                       }
                     ],
                     "usr": "s:Sq"
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:8RoveriOS7ReceiptV25merchantLocalPurchaseDate10Foundation0G0VSgvg",
-                "mangledName": "$s8RoveriOS7ReceiptV25merchantLocalPurchaseDate10Foundation0G0VSgvg",
+                "usr": "s:8RoveriOS7ReceiptV25merchantLocalPurchaseDateSSSgvg",
+                "mangledName": "$s8RoveriOS7ReceiptV25merchantLocalPurchaseDateSSSgvg",
                 "moduleName": "RoveriOS",
                 "implicit": true,
                 "accessorKind": "get"
@@ -19153,21 +19375,21 @@
                   {
                     "kind": "TypeNominal",
                     "name": "Optional",
-                    "printedName": "Foundation.Date?",
+                    "printedName": "Swift.String?",
                     "children": [
                       {
                         "kind": "TypeNominal",
-                        "name": "Date",
-                        "printedName": "Foundation.Date",
-                        "usr": "s:10Foundation4DateV"
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
                       }
                     ],
                     "usr": "s:Sq"
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:8RoveriOS7ReceiptV25merchantLocalPurchaseDate10Foundation0G0VSgvs",
-                "mangledName": "$s8RoveriOS7ReceiptV25merchantLocalPurchaseDate10Foundation0G0VSgvs",
+                "usr": "s:8RoveriOS7ReceiptV25merchantLocalPurchaseDateSSSgvs",
+                "mangledName": "$s8RoveriOS7ReceiptV25merchantLocalPurchaseDateSSSgvs",
                 "moduleName": "RoveriOS",
                 "implicit": true,
                 "accessorKind": "set"
@@ -19184,8 +19406,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:8RoveriOS7ReceiptV25merchantLocalPurchaseDate10Foundation0G0VSgvM",
-                "mangledName": "$s8RoveriOS7ReceiptV25merchantLocalPurchaseDate10Foundation0G0VSgvM",
+                "usr": "s:8RoveriOS7ReceiptV25merchantLocalPurchaseDateSSSgvM",
+                "mangledName": "$s8RoveriOS7ReceiptV25merchantLocalPurchaseDateSSSgvM",
                 "moduleName": "RoveriOS",
                 "implicit": true,
                 "accessorKind": "_modify"
@@ -24142,8 +24364,8 @@
       "filePath": "\/Users\/rjbowli\/Development\/smallplanet\/smallplanet_RoveriOS_SDK\/RoveriOS\/Pamphlet.release.swift",
       "kind": "StringLiteral",
       "offset": 102,
-      "length": 9,
-      "value": "\"v0.3.29\""
+      "length": 8,
+      "value": "\"v0.4.0\""
     },
     {
       "filePath": "\/Users\/rjbowli\/Development\/smallplanet\/smallplanet_RoveriOS_SDK\/RoveriOS\/AppUpdateiOS.swift",

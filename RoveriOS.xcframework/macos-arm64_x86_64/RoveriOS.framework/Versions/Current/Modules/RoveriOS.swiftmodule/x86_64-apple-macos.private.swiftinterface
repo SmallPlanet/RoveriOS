@@ -249,14 +249,16 @@ public struct Receipt : Swift.Codable {
   public var receiptId: Swift.String?
   public var receiptDomain: Swift.String?
   public var receiptFormat: Swift.String?
+  public var deviceLocale: Swift.String?
+  public var deviceTimezone: Swift.String?
   public var error: Swift.String?
   public var validationError: Swift.String?
   public var storeName: Swift.String?
   public var contentStoreName: Swift.String?
   public var serviceGroup: Swift.String?
-  public var collectedDate: Foundation.Date?
-  public var purchasedDate: Foundation.Date?
-  public var continuationDate: Foundation.Date?
+  public var collectedDate: Swift.String?
+  public var purchasedDate: Swift.String?
+  public var continuationDate: Swift.String?
   public var membershipInfo: Swift.String?
   public var orderUrl: Swift.String?
   public var additionalOrderUrl: Swift.String?
@@ -276,7 +278,7 @@ public struct Receipt : Swift.Codable {
   public var sourceData: Swift.String?
   public var clientInfo: Swift.String?
   public var auxData: Swift.String?
-  public var merchantLocalPurchaseDate: Foundation.Date?
+  public var merchantLocalPurchaseDate: Swift.String?
   public func encode(to encoder: any Swift.Encoder) throws
   public init(from decoder: any Swift.Decoder) throws
 }
