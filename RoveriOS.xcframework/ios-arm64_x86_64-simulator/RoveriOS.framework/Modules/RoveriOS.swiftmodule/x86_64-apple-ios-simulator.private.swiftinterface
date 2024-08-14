@@ -278,6 +278,8 @@ public struct Receipt : Swift.Codable {
   public var clientInfo: Swift.String?
   public var auxData: Swift.String?
   public var merchantLocalPurchaseDate: Swift.String?
+  public var emlOriginatingDate: Swift.String?
+  public var emlOriginatingDateMerchantLocal: Swift.String?
   public func encode(to encoder: any Swift.Encoder) throws
   public init(from decoder: any Swift.Decoder) throws
 }
