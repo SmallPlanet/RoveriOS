@@ -53,6 +53,7 @@ public enum MerchantId : Swift.Int, Swift.Codable, Swift.CaseIterable {
   case yahoo
   case aol
   case outlook
+  case imap
   case amazon
   case instacart
   case kroger
@@ -249,6 +250,7 @@ public struct Receipt : Swift.Codable {
   public var roverAccountId: Swift.String?
   public var roverSessionUUID: Swift.String?
   public var transportId: Swift.String?
+  public var emailProviderId: Swift.String?
   public var duplicationId: Swift.String?
   public var receiptId: Swift.String?
   public var emailId: Swift.String?
