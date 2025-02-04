@@ -8,6 +8,7 @@ Pod::Spec.new do |s|
   s.source        = { :http => 'https://github.com/SmallPlanet/RoveriOS/releases/download/v0.4.7/RoveriOS.xcframework.zip' }
   s.swift_version = '5.6'
   s.ios.deployment_target = '13.4'
+  s.osx.deployment_target = '12.0'
 
   s.vendored_frameworks = 'RoveriOS.xcframework'
 end
