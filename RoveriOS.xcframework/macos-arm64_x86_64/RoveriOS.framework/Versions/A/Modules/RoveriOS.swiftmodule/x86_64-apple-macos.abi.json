@@ -26240,7 +26240,7 @@
       "kind": "StringLiteral",
       "offset": 102,
       "length": 8,
-      "value": "\"v0.4.7\""
+      "value": "\"v0.4.8\""
     },
     {
       "filePath": "\/Users\/rjbowli\/Development\/smallplanet\/smallplanet_RoveriOS_SDK\/RoveriOS\/AppUpdateMacOS.swift",
