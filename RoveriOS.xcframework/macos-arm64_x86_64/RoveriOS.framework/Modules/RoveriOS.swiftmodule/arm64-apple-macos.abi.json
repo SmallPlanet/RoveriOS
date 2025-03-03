@@ -26239,8 +26239,8 @@
       "filePath": "\/Users\/rjbowli\/Development\/smallplanet\/smallplanet_RoveriOS_SDK\/RoveriOS\/Pamphlet.release.swift",
       "kind": "StringLiteral",
       "offset": 102,
-      "length": 8,
-      "value": "\"v0.4.9\""
+      "length": 9,
+      "value": "\"v0.4.10\""
     },
     {
       "filePath": "\/Users\/rjbowli\/Development\/smallplanet\/smallplanet_RoveriOS_SDK\/RoveriOS\/AppUpdateMacOS.swift",
