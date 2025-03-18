@@ -195,6 +195,26 @@ public struct ScrapeRequest : Swift.Codable {
   public func encode(to encoder: any Swift.Encoder) throws
   public init(from decoder: any Swift.Decoder) throws
 }
+public struct ReceiptFlight : Swift.Codable {
+  public var number: Swift.String?
+  public var departureName: Swift.String?
+  public var departureCode: Swift.String?
+  public var arrivalName: Swift.String?
+  public var arrivalCode: Swift.String?
+  public var departureDate: Swift.String?
+  public var arrivalDate: Swift.String?
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct ReceiptAccomodation : Swift.Codable {
+  public var agent: Swift.String?
+  public var name: Swift.String?
+  public var address: RoveriOS.ReceiptAddress?
+  public var arrivalDate: Swift.String?
+  public var departureDate: Swift.String?
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
 public struct ReceiptFee : Swift.Codable {
   public var price: Swift.String?
   public var name: Swift.String?
@@ -208,6 +228,7 @@ public struct ReceiptAddress : Swift.Codable {
   public var city: Swift.String?
   public var state: Swift.String?
   public var zip: Swift.String?
+  public var country: Swift.String?
   public func encode(to encoder: any Swift.Encoder) throws
   public init(from decoder: any Swift.Decoder) throws
 }
@@ -294,6 +315,8 @@ public struct Receipt : Swift.Codable {
   public var preorder: Swift.String?
   public var returned: Swift.String?
   public var trackingId: Swift.String?
+  public var travelFlights: [RoveriOS.ReceiptFlight]?
+  public var travelAccomodations: [RoveriOS.ReceiptAccomodation]?
   public func encode(to encoder: any Swift.Encoder) throws
   public init(from decoder: any Swift.Decoder) throws
 }
