@@ -222,6 +222,7 @@ public struct ReceiptFee : Swift.Codable {
   public init(from decoder: any Swift.Decoder) throws
 }
 public struct ReceiptAddress : Swift.Codable {
+  public var original: Swift.String?
   public var name: Swift.String?
   public var address1: Swift.String?
   public var address2: Swift.String?
