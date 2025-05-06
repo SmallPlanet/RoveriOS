@@ -63,6 +63,7 @@ public enum MerchantId : Swift.Int, Swift.Codable, Swift.CaseIterable {
   case walgreens
   case cvs
   case thrivemarket
+  case doordash
   case costco
   case target
   case unitedHealthcare
@@ -234,6 +235,18 @@ public struct ReceiptAddress : Swift.Codable {
   public func encode(to encoder: any Swift.Encoder) throws
   public init(from decoder: any Swift.Decoder) throws
 }
+public struct ReceiptItemOption : Swift.Codable {
+  public var title: Swift.String?
+  public var itemId: Swift.String?
+  public var upc: Swift.String?
+  public var quantity: Swift.String?
+  public var weight: Swift.String?
+  public var itemOptionIndex: Swift.String?
+  public var unitPrice: Swift.String?
+  public var totalPrice: Swift.String?
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
 public struct ReceiptItem : Swift.Codable {
   public var titleOriginal: Swift.String?
   public var title: Swift.String?
@@ -263,6 +276,7 @@ public struct ReceiptItem : Swift.Codable {
   public var size: Swift.String?
   public var type: Swift.String?
   public var trackingId: Swift.String?
+  public var itemOptions: [RoveriOS.ReceiptItemOption]?
   public func encode(to encoder: any Swift.Encoder) throws
   public init(from decoder: any Swift.Decoder) throws
 }
