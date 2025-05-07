@@ -300,6 +300,7 @@ public struct Receipt : Swift.Codable {
   public var serviceGroup: Swift.String?
   public var collectedDate: Swift.String?
   public var purchasedDate: Swift.String?
+  public var completedDate: Swift.String?
   public var continuationDate: Swift.String?
   public var membershipInfo: Swift.String?
   public var orderUrl: Swift.String?
