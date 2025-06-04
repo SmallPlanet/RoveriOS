@@ -91,6 +91,12 @@ public enum MerchantId : Swift.Int, Swift.Codable, Swift.CaseIterable {
   case eyemed
   case wolfe0
   case netflix
+  case hulu
+  case disneyplus
+  case primevideo
+  case paramountplus
+  case max
+  case peacock
   public init?(rawValue: Swift.Int)
   public typealias AllCases = [RoveriOS.MerchantId]
   public typealias RawValue = Swift.Int
@@ -217,6 +223,38 @@ public struct ReceiptAccomodation : Swift.Codable {
   public func encode(to encoder: any Swift.Encoder) throws
   public init(from decoder: any Swift.Decoder) throws
 }
+public struct ReceiptCarRental : Swift.Codable {
+  public var pickupDate: Swift.String?
+  public var dropoffDate: Swift.String?
+  public var dropoffLocation: Swift.String?
+  public var pickupLocation: Swift.String?
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct ReceiptTrain : Swift.Codable {
+  public var departureCity: Swift.String?
+  public var departureState: Swift.String?
+  public var departureStation: Swift.String?
+  public var departureDate: Swift.String?
+  public var arrivalCity: Swift.String?
+  public var arrivalState: Swift.String?
+  public var arrivalStation: Swift.String?
+  public var arrivalDate: Swift.String?
+  public var ticketNumber: Swift.String?
+  public var trainNumber: Swift.String?
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct ReceiptBus : Swift.Codable {
+  public var departureDate: Swift.String?
+  public var departureCity: Swift.String?
+  public var departureStation: Swift.String?
+  public var arrivalDate: Swift.String?
+  public var arrivalCity: Swift.String?
+  public var arrivalStation: Swift.String?
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
 public struct ReceiptFee : Swift.Codable {
   public var price: Swift.String?
   public var name: Swift.String?
@@ -334,6 +372,56 @@ public struct Receipt : Swift.Codable {
   public var trackingId: Swift.String?
   public var travelFlights: [RoveriOS.ReceiptFlight]?
   public var travelAccomodations: [RoveriOS.ReceiptAccomodation]?
+  public var travelCarRentals: [RoveriOS.ReceiptCarRental]?
+  public var travelTrains: [RoveriOS.ReceiptTrain]?
+  public var travelBuses: [RoveriOS.ReceiptBus]?
+  public var streamingVideo: RoveriOS.ReceiptStreamingVideo?
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct ReceiptStreamingVideoProfile : Swift.Codable {
+  public var id: Swift.String?
+  public var name: Swift.String?
+  public var isKids: Swift.String?
+  public var isMain: Swift.String?
+  public var birthday: Swift.String?
+  public var gender: Swift.String?
+  public var createdDate: Swift.String?
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct ReceiptStreamingVideoExtraValue : Swift.Codable {
+  public var service: Swift.String?
+  public var key: Swift.String?
+  public var value: Swift.String?
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct ReceiptStreamingVideo : Swift.Codable {
+  public var profile: RoveriOS.ReceiptStreamingVideoProfile?
+  public var extraValues: [RoveriOS.ReceiptStreamingVideoExtraValue]?
+  public var seriesTitle: Swift.String?
+  public var seriesAsin: Swift.String?
+  public var seriesId: Swift.String?
+  public var seriesDescription: Swift.String?
+  public var seriesUrl: Swift.String?
+  public var seriesImage: Swift.String?
+  public var seasonTitle: Swift.String?
+  public var seasonAsin: Swift.String?
+  public var seasonId: Swift.String?
+  public var seasonDescription: Swift.String?
+  public var seasonUrl: Swift.String?
+  public var seasonImage: Swift.String?
+  public var videoTitle: Swift.String?
+  public var videoAsin: Swift.String?
+  public var videoId: Swift.String?
+  public var videoDescription: Swift.String?
+  public var videoUrl: Swift.String?
+  public var videoImage: Swift.String?
+  public var videoLengthSeconds: Swift.String?
+  public var videoWatchedSeconds: Swift.String?
+  public var viewDate: Swift.String?
+  public var videoType: Swift.String?
   public func encode(to encoder: any Swift.Encoder) throws
   public init(from decoder: any Swift.Decoder) throws
 }
