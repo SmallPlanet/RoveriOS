@@ -80,6 +80,58 @@ Rover.shared.remove(connection: connection) { }
 
 ```
 
+### Background Collection
+
+To perform collections in the background (via [BGTaskScheduler](https://developer.apple.com/documentation/uikit/using-background-tasks-to-update-your-app?language=objc)) you need to perform the following steps.
+
+- Add the **Background Modes** signing capability to your application;  enable the **Background fetch** and **Background processing** options.  
+- Add **Permitted background task scheduler identifiers** to your Info.plist; add **com.smallplanet.rover.processing** as a permitted identifier.
+- In your app's applicationDidFinishLaunching method you must call **Rover.shared.scheduleBackgroundCollections()**
+
+```
+func application(_ application: UIApplication,
+                 didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey : Any]? = nil) -> Bool {
+	// Schedule background refreshes at most every 24 hours.
+	// You can pass an interval of 0 to cancel scheduled tasks and disable.
+	// You must call Rover.shared.scheduleBackgroundCollections() at least once in
+	// didFinishLaunchingWithOptions; you may call it any time after to update
+	// the schedule interval
+	Rover.shared.scheduleBackgroundCollections(interval: 60 * 60 * 24) {
+		// When iOS chooses to allow for background processing this code will run.
+		// You should call Rover.shared.collect() for the connections you would like to refresh.
+		// This allows you to implement custom logic to fit your business needs (for example, 
+		// if one connection is higher priority than another or needs to be refreshed more
+		// often than another). Note that the amount of time allowed to collections is
+		// typically limited to a few minutes.
+        Rover.shared.configure(licenseKey: "MY_ROVER_LICENSE_KEY") { merchants, error in
+            Rover.shared.connections { connections in
+                
+                // Perform collections for at more one connection; that connection should:
+                // - not be userInteractionRequired
+                // - have the oldest collection date
+                let filteredConnections = connections
+                    .filter { $0.userInteractionRequired == false }
+                    .sorted { lhs, rhs in
+                        return (lhs.attemptedDate ?? Date.distantPast) < (rhs.attemptedDate ?? Date.distantPast)
+                }
+                if let connection = filteredConnections.first {
+                    Rover.shared.collect(account: connection.account,
+                             			merchantId: connection.merchantId,
+                             			fromDate: connection.fromDate ?? Date(),
+                             			isEphemeral: false,
+                             			featureFlags: connection.featureFlags,
+                             			delegate: ReferenceDelegate())
+                }
+            }
+        }
+	} collectionWillFinish: { taskIdentifier, connections in
+		// Called before background collection finishes (either because it was
+		// fuly completed or because iOS ended it early). Connections contains
+		// the connections which completed during the run.
+	}
+}
+```
+
 
 ## SDK Integration
 
@@ -117,4 +169,4 @@ Clear the following dialog and then go to your target's General settings.  In th
 ![](meta/select_embed.png)
 
 
-Latest version: v0.4.19
+Latest version: v0.4.23

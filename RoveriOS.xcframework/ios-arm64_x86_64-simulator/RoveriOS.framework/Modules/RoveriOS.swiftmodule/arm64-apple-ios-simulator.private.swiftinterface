@@ -1,7 +1,8 @@
 // swift-interface-format-version: 1.0
 // swift-compiler-version: Apple Swift version 5.9.2 (swiftlang-5.9.2.2.56 clang-1500.1.0.2.5)
-// swift-module-flags: -target arm64-apple-ios12.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name RoveriOS
+// swift-module-flags: -target arm64-apple-ios13.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name RoveriOS
 // swift-module-flags-ignorable: -enable-bare-slash-regex
+import BackgroundTasks
 import Foundation
 import Swift
 import UIKit
@@ -14,10 +15,12 @@ public struct Connection : Swift.Codable {
   public let password: Swift.String?
   public let cookiesBase64: Swift.String?
   public let fromDate: Foundation.Date?
+  public let collectedDate: Foundation.Date?
+  public let attemptedDate: Foundation.Date?
   public let appInfo: Swift.String?
   public let featureFlags: [Swift.String]?
   public let userInteractionRequired: Swift.Bool
-  public init(merchantId: Swift.Int, account: Swift.String, password: Swift.String?, cookiesBase64: Swift.String?, fromDate: Foundation.Date?, appInfo: Swift.String?, featureFlags: [Swift.String]?, userInteractionRequired: Swift.Bool)
+  public init(merchantId: Swift.Int, account: Swift.String, password: Swift.String?, cookiesBase64: Swift.String?, fromDate: Foundation.Date?, collectedDate: Foundation.Date?, attemptedDate: Foundation.Date?, appInfo: Swift.String?, featureFlags: [Swift.String]?, userInteractionRequired: Swift.Bool)
   public func encode(to encoder: any Swift.Encoder) throws
   public init(from decoder: any Swift.Decoder) throws
 }
@@ -63,6 +66,7 @@ public enum MerchantId : Swift.Int, Swift.Codable, Swift.CaseIterable {
   case cvs
   case thrivemarket
   case doordash
+  case ubereats
   case costco
   case target
   case unitedHealthcare
@@ -194,11 +198,12 @@ public struct ScrapeRequest : Swift.Codable {
   public var featureFlags: [Swift.String]?
   public var proxy: Swift.String?
   public var isUnitTest: Swift.Bool?
+  public var isBackgroundAppRefresh: Swift.Int
   public var overrideMimicDesktopIfPossible: Swift.Bool?
   public var overrideWebviewBlockImageLoading: Swift.Bool?
   public var allowServerInteractionRequired: Swift.Bool?
   public var roverLicense: Swift.String?
-  public init(delegateUUID: Swift.String, userId: Swift.String, applicationId: Swift.String, account: Swift.String, password: Swift.String?, cookiesBase64: Swift.String?, merchantId: Swift.Int?, javascript: Foundation.Data?, javascriptUrl: Swift.String?, javascriptVersion: Swift.Int?, fromDate: Foundation.Date?, toDate: Foundation.Date?, serviceGroupRequests: [RoveriOS.ServiceGroupRequest]?, tier1BatchSize: Swift.Int?, tier2BatchSize: Swift.Int?, tier3BatchSize: Swift.Int?, receiptsBatchSize: Swift.Int?, collectItemInfo: Swift.Bool?, collectSourceData: Swift.Bool?, isEphemeral: Swift.Bool?, hasBackend: Swift.Bool?, allowUserInteractionRequired: Swift.Bool?, exclusivityId: Swift.Int?, extraInfo: [Swift.String]?, appInfo: Swift.String?, featureFlags: [Swift.String]?, proxy: Swift.String?, isUnitTest: Swift.Bool?, overrideMimicDesktopIfPossible: Swift.Bool?, overrideWebviewBlockImageLoading: Swift.Bool?, allowServerInteractionRequired: Swift.Bool?, roverLicense: Swift.String?)
+  public init(delegateUUID: Swift.String, userId: Swift.String, applicationId: Swift.String, account: Swift.String, password: Swift.String?, cookiesBase64: Swift.String?, merchantId: Swift.Int?, javascript: Foundation.Data?, javascriptUrl: Swift.String?, javascriptVersion: Swift.Int?, fromDate: Foundation.Date?, toDate: Foundation.Date?, serviceGroupRequests: [RoveriOS.ServiceGroupRequest]?, tier1BatchSize: Swift.Int?, tier2BatchSize: Swift.Int?, tier3BatchSize: Swift.Int?, receiptsBatchSize: Swift.Int?, collectItemInfo: Swift.Bool?, collectSourceData: Swift.Bool?, isEphemeral: Swift.Bool?, hasBackend: Swift.Bool?, allowUserInteractionRequired: Swift.Bool?, exclusivityId: Swift.Int?, extraInfo: [Swift.String]?, appInfo: Swift.String?, featureFlags: [Swift.String]?, proxy: Swift.String?, isUnitTest: Swift.Bool?, isBackgroundAppRefresh: Swift.Int, overrideMimicDesktopIfPossible: Swift.Bool?, overrideWebviewBlockImageLoading: Swift.Bool?, allowServerInteractionRequired: Swift.Bool?, roverLicense: Swift.String?)
   public func encode(to encoder: any Swift.Encoder) throws
   public init(from decoder: any Swift.Decoder) throws
 }
@@ -348,6 +353,8 @@ public struct Receipt : Swift.Codable {
   public var total: Swift.String?
   public var totalWithoutTax: Swift.String?
   public var deliveryCharge: Swift.String?
+  public var deliveryDistance: Swift.String?
+  public var deliveryDuration: Swift.String?
   public var discounts: Swift.String?
   public var giftCards: Swift.String?
   public var tip: Swift.String?
@@ -356,6 +363,7 @@ public struct Receipt : Swift.Codable {
   public var paymentChannel: Swift.String?
   public var shippingAddress: RoveriOS.ReceiptAddress?
   public var merchantAddress: RoveriOS.ReceiptAddress?
+  public var merchantLocationType: Swift.String?
   public var billingAddress: RoveriOS.ReceiptAddress?
   public var items: [RoveriOS.ReceiptItem]
   public var sourceData: Swift.String?
@@ -504,6 +512,9 @@ open class RoverDelegate {
   open func roverPullT3(sessionUUID: Swift.String, callback: @escaping (_ error: Swift.String?, _ orders: [Swift.String], _ appInfo: Swift.String?) -> ())
   open func roverPushT3(sessionUUID: Swift.String, orders: [Swift.String], callback: @escaping (_ error: Swift.String?, _ appInfo: Swift.String?) -> ())
   @objc deinit
+}
+extension RoveriOS.Rover {
+  public func scheduleBackgroundCollections(interval: Foundation.TimeInterval, collectionWillStart: @escaping (Swift.String) -> (), collectionWillFinish: @escaping (Swift.String, [RoveriOS.Connection]) -> ())
 }
 public enum Pamphlet {
   public static let version: Swift.String
