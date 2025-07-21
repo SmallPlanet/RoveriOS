@@ -1,7 +1,7 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.9.2 (swiftlang-5.9.2.2.56 clang-1500.1.0.2.5)
-// swift-module-flags: -target arm64-apple-macos11.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name RoveriOS
-// swift-module-flags-ignorable: -enable-bare-slash-regex
+// swift-compiler-version: Apple Swift version 6.1.2 effective-5.10 (swiftlang-6.1.2.1.2 clang-1700.0.13.5)
+// swift-module-flags: -target arm64-apple-macos11.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name RoveriOS
+// swift-module-flags-ignorable: -no-verify-emitted-module-interface -interface-compiler-version 6.1.2
 import BackgroundTasks
 import Cocoa
 import Foundation
@@ -44,7 +44,7 @@ public enum InternalMerchantId : Swift.Int, Swift.Codable, Swift.CaseIterable {
   public init?(rawValue: Swift.Int)
   public typealias AllCases = [RoveriOS.InternalMerchantId]
   public typealias RawValue = Swift.Int
-  public static var allCases: [RoveriOS.InternalMerchantId] {
+  nonisolated public static var allCases: [RoveriOS.InternalMerchantId] {
     get
   }
   public var rawValue: Swift.Int {
@@ -52,6 +52,7 @@ public enum InternalMerchantId : Swift.Int, Swift.Codable, Swift.CaseIterable {
   }
 }
 public enum MerchantId : Swift.Int, Swift.Codable, Swift.CaseIterable {
+  case tutorial
   case gmail
   case yahoo
   case aol
@@ -94,6 +95,7 @@ public enum MerchantId : Swift.Int, Swift.Codable, Swift.CaseIterable {
   case meritain
   case eyemed
   case wolfe0
+  case chatgpt
   case netflix
   case hulu
   case disneyplus
@@ -104,7 +106,7 @@ public enum MerchantId : Swift.Int, Swift.Codable, Swift.CaseIterable {
   public init?(rawValue: Swift.Int)
   public typealias AllCases = [RoveriOS.MerchantId]
   public typealias RawValue = Swift.Int
-  public static var allCases: [RoveriOS.MerchantId] {
+  nonisolated public static var allCases: [RoveriOS.MerchantId] {
     get
   }
   public var rawValue: Swift.Int {
@@ -384,6 +386,7 @@ public struct Receipt : Swift.Codable {
   public var travelTrains: [RoveriOS.ReceiptTrain]?
   public var travelBuses: [RoveriOS.ReceiptBus]?
   public var streamingVideo: RoveriOS.ReceiptStreamingVideo?
+  public var aiConversation: RoveriOS.ReceiptAIConversation?
   public func encode(to encoder: any Swift.Encoder) throws
   public init(from decoder: any Swift.Decoder) throws
 }
@@ -433,6 +436,74 @@ public struct ReceiptStreamingVideo : Swift.Codable {
   public func encode(to encoder: any Swift.Encoder) throws
   public init(from decoder: any Swift.Decoder) throws
 }
+public struct ReceiptAIConversationMessagePart : Swift.Codable {
+  public var imageId: Swift.String?
+  public var imageWidth: Swift.String?
+  public var imageHeight: Swift.String?
+  public var imageGenerator: Swift.String?
+  public var text: Swift.String?
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct ReceiptAIConversationSearchResult : Swift.Codable {
+  public var domain: Swift.String?
+  public var type: Swift.String?
+  public var url: Swift.String?
+  public var title: Swift.String?
+  public var snippet: Swift.String?
+  public var publishedDate: Swift.String?
+  public var attribution: Swift.String?
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct ReceiptAIConversationContentReference : Swift.Codable {
+  public var replaceText: Swift.String?
+  public var altText: Swift.String?
+  public var type: Swift.String?
+  public var website: RoveriOS.ReceiptAIConversationSearchResult?
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct ReceiptAIConversationAttachment : Swift.Codable {
+  public var imageId: Swift.String?
+  public var imageWidth: Swift.String?
+  public var imageHeight: Swift.String?
+  public var imageType: Swift.String?
+  public var imageName: Swift.String?
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct ReceiptAIConversationMessage : Swift.Codable {
+  public var continuousSessionUUID: Swift.String?
+  public var messageId: Swift.String?
+  public var author: Swift.String?
+  public var createdDate: Swift.String?
+  public var updatedDate: Swift.String?
+  public var contentType: Swift.String?
+  public var messageParts: [RoveriOS.ReceiptAIConversationMessagePart]?
+  public var attachments: [RoveriOS.ReceiptAIConversationAttachment]?
+  public var contentReferences: [RoveriOS.ReceiptAIConversationContentReference]?
+  public var searchResults: [RoveriOS.ReceiptAIConversationSearchResult]?
+  public var model: Swift.String?
+  public var codeLanguage: Swift.String?
+  public var codeText: Swift.String?
+  public var visibility: Swift.String?
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct ReceiptAIConversation : Swift.Codable {
+  public var userId: Swift.String?
+  public var userName: Swift.String?
+  public var userEmail: Swift.String?
+  public var userCreatedDate: Swift.String?
+  public var conversationId: Swift.String?
+  public var title: Swift.String?
+  public var createdDate: Swift.String?
+  public var updatedDate: Swift.String?
+  public var messages: [RoveriOS.ReceiptAIConversationMessage]?
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
 extension RoveriOS.Rover {
   public enum Environment : Swift.String, Swift.Codable {
     case staging
@@ -456,46 +527,30 @@ extension RoveriOS.Rover {
     get
   }
   public func configure(licenseKey: Swift.String, environment: RoveriOS.Rover.Environment = .staging, deviceId: Swift.String = "unknown", maxConcurrentCollections: Swift.Int = 4, callback: @escaping ([RoveriOS.Merchant], Swift.String?) -> ())
-  #if compiler(>=5.3) && $AsyncAwait
   @available(iOS 13.0.0, *)
   public func configure(licenseKey: Swift.String, environment: RoveriOS.Rover.Environment = .staging, deviceId: Swift.String = "unknown", maxConcurrentCollections: Swift.Int = 4) async -> ([RoveriOS.Merchant], Swift.String?)
-  #endif
   public func collect(userId: Swift.String? = nil, account: Swift.String? = nil, password: Swift.String? = nil, cookiesBase64: Swift.String? = nil, merchantId: Swift.Int?, javascript: Foundation.Data? = nil, javascriptUrl: Swift.String? = nil, javascriptVersion: Swift.Int? = nil, fromDate: Foundation.Date, toDate: Foundation.Date? = nil, serviceGroupRequests: [RoveriOS.ServiceGroupRequest]? = nil, tier1BatchSize: Swift.Int = 16, tier2BatchSize: Swift.Int = 16, tier3BatchSize: Swift.Int = 16, receiptsBatchSize: Swift.Int = 8, collectItemInfo: Swift.Bool? = false, collectSourceData: Swift.Bool? = false, isEphemeral: Swift.Bool = false, hasBackend: Swift.Bool = false, allowUserInteractionRequired: Swift.Bool = true, appInfo: Swift.String? = nil, featureFlags: [Swift.String]? = nil, overrideMimicDesktopIfPossible: Swift.Bool? = nil, overrideWebviewBlockImageLoading: Swift.Bool? = nil, delegate: RoveriOS.RoverDelegate)
   public func cancel(sessionUUID: Swift.String, callback: @escaping (Swift.String?) -> ())
-  #if compiler(>=5.3) && $AsyncAwait
   @available(iOS 13.0.0, *)
-  public func cancel(sessionUUID: Swift.String) async -> (Swift.String?)
-  #endif
+  public func cancel(sessionUUID: Swift.String) async -> Swift.String?
   public func cancelAll(callback: @escaping (Swift.String?) -> ())
-  #if compiler(>=5.3) && $AsyncAwait
   @available(iOS 13.0.0, *)
-  public func cancelAll() async -> (Swift.String?)
-  #endif
+  public func cancelAll() async -> Swift.String?
   public func preconfig(userId: Swift.String? = nil, merchantId: Swift.Int?, javascript: Foundation.Data? = nil, javascriptUrl: Swift.String? = nil, javascriptVersion: Swift.Int? = nil, delegate: RoveriOS.RoverDelegate, callback: @escaping (_ preconfig: Swift.String?, _ error: Swift.String?) -> ())
-  #if compiler(>=5.3) && $AsyncAwait
   @available(iOS 13.0.0, *)
   public func preconfig(userId: Swift.String? = nil, merchantId: Swift.Int?, javascript: Foundation.Data? = nil, javascriptUrl: Swift.String? = nil, javascriptVersion: Swift.Int? = nil, delegate: RoveriOS.RoverDelegate) async -> (Swift.String?, Swift.String?)
-  #endif
   public func connections(_ callback: @escaping ([RoveriOS.Connection]) -> ())
-  #if compiler(>=5.3) && $AsyncAwait
   @available(iOS 13.0.0, *)
-  public func connections() async -> ([RoveriOS.Connection])
-  #endif
+  public func connections() async -> [RoveriOS.Connection]
   public func remove(account: Swift.String, merchantId: Swift.Int, _ callback: @escaping () -> ())
-  #if compiler(>=5.3) && $AsyncAwait
   @available(iOS 13.0.0, *)
   public func remove(account: Swift.String, merchantId: Swift.Int) async
-  #endif
   public func remove(connection: RoveriOS.Connection, _ callback: @escaping () -> ())
-  #if compiler(>=5.3) && $AsyncAwait
   @available(iOS 13.0.0, *)
   public func remove(connection: RoveriOS.Connection) async
-  #endif
   public func pull(authorization: Swift.String, requestsUrl: Swift.String, resultsUrl: Swift.String, statusUrl: Swift.String?, _ callback: @escaping (Swift.Int, Swift.String?) -> ())
-  #if compiler(>=5.3) && $AsyncAwait
   @available(iOS 13.0.0, *)
   public func pull(authorization: Swift.String, requestsUrl: Swift.String, resultsUrl: Swift.String, statusUrl: Swift.String?) async -> (Swift.Int, Swift.String?)
-  #endif
   @objc deinit
 }
 open class RoverDelegate {

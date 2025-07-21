@@ -6,7 +6,7 @@
 	<dict>
 		<key>Resources/Info.plist</key>
 		<data>
-		RyF+ovfeaEQnCQ8U3KmLtpEbEcY=
+		r/xVnqo2UixhkCqKzOXk8GRyXXo=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -15,77 +15,77 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			GgBn4mhLYBihoih9YF2LL9QytN/cBc04Jk8rdkmb/eI=
+			4JVe8tInqIKMIp90oXDLI6/GMGafLxlOBiQuxlD17Oo=
 			</data>
 		</dict>
 		<key>Modules/RoveriOS.swiftmodule/arm64-apple-macos.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			Uqw5Pn0vYnmc34CFZWdtlUave6mJ76G2efid+JeaWMI=
+			5HBQ21/qcAiVQWO9mJfpC+PfBGi33A3gQmdg42ONxLk=
 			</data>
 		</dict>
 		<key>Modules/RoveriOS.swiftmodule/arm64-apple-macos.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			cwCWQJTCigWUUkiETHAm/3ODD4cBe+pdZH2HawJM2+4=
+			Fs3sISiHq7AXtSjKLr3S2BlQ8558H8tWUDTi1FK8DpY=
 			</data>
 		</dict>
 		<key>Modules/RoveriOS.swiftmodule/arm64-apple-macos.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			JK5VTrGckegqfsu0ewsuYCe5lGeryypmg2zpqrlzx/0=
+			G6Y2nmUdZwcaYkPLqOzuI2WbT/5vT3amczUpYXhkpDM=
 			</data>
 		</dict>
 		<key>Modules/RoveriOS.swiftmodule/arm64-apple-macos.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			cwCWQJTCigWUUkiETHAm/3ODD4cBe+pdZH2HawJM2+4=
+			Fs3sISiHq7AXtSjKLr3S2BlQ8558H8tWUDTi1FK8DpY=
 			</data>
 		</dict>
 		<key>Modules/RoveriOS.swiftmodule/arm64-apple-macos.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			3cLJ3sfZWtm2fB3tJ8izpaSWOS+gPHhMGrWvfMs7Dkg=
+			JIdUNmm4vgCoKZZoRrq8ML6SYcoKeKLJl127SvUAM/U=
 			</data>
 		</dict>
 		<key>Modules/RoveriOS.swiftmodule/x86_64-apple-macos.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			Uqw5Pn0vYnmc34CFZWdtlUave6mJ76G2efid+JeaWMI=
+			5HBQ21/qcAiVQWO9mJfpC+PfBGi33A3gQmdg42ONxLk=
 			</data>
 		</dict>
 		<key>Modules/RoveriOS.swiftmodule/x86_64-apple-macos.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			1HtT7R+zDrc6OVSEUQUFEarUHgR8zXxWPHfnRRdWCpI=
+			MQg21GewweN7cdQ1qCJ8nfhjTur4QzyqOkF4u4Zko8w=
 			</data>
 		</dict>
 		<key>Modules/RoveriOS.swiftmodule/x86_64-apple-macos.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			XWso1YoQ+d8zQDdjyxZRD9ElumfuCPj3mn3AbdvYW/Q=
+			b9v63DMwA19xRXDKHqvMzh3ilbEMj+7QRDCyIN1PxrQ=
 			</data>
 		</dict>
 		<key>Modules/RoveriOS.swiftmodule/x86_64-apple-macos.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			1HtT7R+zDrc6OVSEUQUFEarUHgR8zXxWPHfnRRdWCpI=
+			MQg21GewweN7cdQ1qCJ8nfhjTur4QzyqOkF4u4Zko8w=
 			</data>
 		</dict>
 		<key>Modules/RoveriOS.swiftmodule/x86_64-apple-macos.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			rrfzA9vQL0Te8382bYWk4WFW+l281Ci0BSVHT8ftzbg=
+			OQ+BIM26mfB/UYCub/JpPBGfM0I1TRYtKe9r/ys4IKs=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
@@ -99,7 +99,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			SpctPC8q6Un/BYVc6lj3i3T4NjsXvgIj9XqiwcFMfFE=
+			L/EGQsMxoENlr3Vrutvw9OcD4vxWjmuLgwcQLAe6/2I=
 			</data>
 		</dict>
 	</dict>
