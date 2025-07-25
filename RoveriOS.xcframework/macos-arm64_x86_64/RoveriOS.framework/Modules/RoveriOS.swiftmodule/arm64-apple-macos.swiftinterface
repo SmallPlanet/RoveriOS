@@ -432,6 +432,7 @@ public struct ReceiptStreamingVideo : Swift.Codable {
   public var videoLengthSeconds: Swift.String?
   public var videoWatchedSeconds: Swift.String?
   public var viewDate: Swift.String?
+  public var estimatedViewDate: Swift.String?
   public var videoType: Swift.String?
   public func encode(to encoder: any Swift.Encoder) throws
   public init(from decoder: any Swift.Decoder) throws
