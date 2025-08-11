@@ -21612,6 +21612,117 @@
           },
           {
             "kind": "Var",
+            "name": "roverMerchantVersion",
+            "printedName": "roverMerchantVersion",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.Int?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:8RoveriOS7ReceiptV20roverMerchantVersionSiSgvp",
+            "mangledName": "$s8RoveriOS7ReceiptV20roverMerchantVersionSiSgvp",
+            "moduleName": "RoveriOS",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.Int?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Int",
+                        "printedName": "Swift.Int",
+                        "usr": "s:Si"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8RoveriOS7ReceiptV20roverMerchantVersionSiSgvg",
+                "mangledName": "$s8RoveriOS7ReceiptV20roverMerchantVersionSiSgvg",
+                "moduleName": "RoveriOS",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.Int?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Int",
+                        "printedName": "Swift.Int",
+                        "usr": "s:Si"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8RoveriOS7ReceiptV20roverMerchantVersionSiSgvs",
+                "mangledName": "$s8RoveriOS7ReceiptV20roverMerchantVersionSiSgvs",
+                "moduleName": "RoveriOS",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8RoveriOS7ReceiptV20roverMerchantVersionSiSgvM",
+                "mangledName": "$s8RoveriOS7ReceiptV20roverMerchantVersionSiSgvM",
+                "moduleName": "RoveriOS",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
             "name": "roverUserId",
             "printedName": "roverUserId",
             "children": [
@@ -29390,431 +29501,6 @@
       },
       {
         "kind": "TypeDecl",
-        "name": "ReceiptStreamingVideoExtraValue",
-        "printedName": "ReceiptStreamingVideoExtraValue",
-        "children": [
-          {
-            "kind": "Var",
-            "name": "service",
-            "printedName": "service",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "Swift.String?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  }
-                ],
-                "usr": "s:Sq"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:8RoveriOS31ReceiptStreamingVideoExtraValueV7serviceSSSgvp",
-            "mangledName": "$s8RoveriOS31ReceiptStreamingVideoExtraValueV7serviceSSSgvp",
-            "moduleName": "RoveriOS",
-            "declAttributes": [
-              "HasInitialValue",
-              "HasStorage",
-              "AccessControl"
-            ],
-            "hasStorage": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Optional",
-                    "printedName": "Swift.String?",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "String",
-                        "printedName": "Swift.String",
-                        "usr": "s:SS"
-                      }
-                    ],
-                    "usr": "s:Sq"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:8RoveriOS31ReceiptStreamingVideoExtraValueV7serviceSSSgvg",
-                "mangledName": "$s8RoveriOS31ReceiptStreamingVideoExtraValueV7serviceSSSgvg",
-                "moduleName": "RoveriOS",
-                "implicit": true,
-                "accessorKind": "get"
-              },
-              {
-                "kind": "Accessor",
-                "name": "Set",
-                "printedName": "Set()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Optional",
-                    "printedName": "Swift.String?",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "String",
-                        "printedName": "Swift.String",
-                        "usr": "s:SS"
-                      }
-                    ],
-                    "usr": "s:Sq"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:8RoveriOS31ReceiptStreamingVideoExtraValueV7serviceSSSgvs",
-                "mangledName": "$s8RoveriOS31ReceiptStreamingVideoExtraValueV7serviceSSSgvs",
-                "moduleName": "RoveriOS",
-                "implicit": true,
-                "accessorKind": "set"
-              },
-              {
-                "kind": "Accessor",
-                "name": "Modify",
-                "printedName": "Modify()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:8RoveriOS31ReceiptStreamingVideoExtraValueV7serviceSSSgvM",
-                "mangledName": "$s8RoveriOS31ReceiptStreamingVideoExtraValueV7serviceSSSgvM",
-                "moduleName": "RoveriOS",
-                "implicit": true,
-                "accessorKind": "_modify"
-              }
-            ]
-          },
-          {
-            "kind": "Var",
-            "name": "key",
-            "printedName": "key",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "Swift.String?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  }
-                ],
-                "usr": "s:Sq"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:8RoveriOS31ReceiptStreamingVideoExtraValueV3keySSSgvp",
-            "mangledName": "$s8RoveriOS31ReceiptStreamingVideoExtraValueV3keySSSgvp",
-            "moduleName": "RoveriOS",
-            "declAttributes": [
-              "HasInitialValue",
-              "HasStorage",
-              "AccessControl"
-            ],
-            "hasStorage": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Optional",
-                    "printedName": "Swift.String?",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "String",
-                        "printedName": "Swift.String",
-                        "usr": "s:SS"
-                      }
-                    ],
-                    "usr": "s:Sq"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:8RoveriOS31ReceiptStreamingVideoExtraValueV3keySSSgvg",
-                "mangledName": "$s8RoveriOS31ReceiptStreamingVideoExtraValueV3keySSSgvg",
-                "moduleName": "RoveriOS",
-                "implicit": true,
-                "accessorKind": "get"
-              },
-              {
-                "kind": "Accessor",
-                "name": "Set",
-                "printedName": "Set()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Optional",
-                    "printedName": "Swift.String?",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "String",
-                        "printedName": "Swift.String",
-                        "usr": "s:SS"
-                      }
-                    ],
-                    "usr": "s:Sq"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:8RoveriOS31ReceiptStreamingVideoExtraValueV3keySSSgvs",
-                "mangledName": "$s8RoveriOS31ReceiptStreamingVideoExtraValueV3keySSSgvs",
-                "moduleName": "RoveriOS",
-                "implicit": true,
-                "accessorKind": "set"
-              },
-              {
-                "kind": "Accessor",
-                "name": "Modify",
-                "printedName": "Modify()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:8RoveriOS31ReceiptStreamingVideoExtraValueV3keySSSgvM",
-                "mangledName": "$s8RoveriOS31ReceiptStreamingVideoExtraValueV3keySSSgvM",
-                "moduleName": "RoveriOS",
-                "implicit": true,
-                "accessorKind": "_modify"
-              }
-            ]
-          },
-          {
-            "kind": "Var",
-            "name": "value",
-            "printedName": "value",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "Swift.String?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  }
-                ],
-                "usr": "s:Sq"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:8RoveriOS31ReceiptStreamingVideoExtraValueV5valueSSSgvp",
-            "mangledName": "$s8RoveriOS31ReceiptStreamingVideoExtraValueV5valueSSSgvp",
-            "moduleName": "RoveriOS",
-            "declAttributes": [
-              "HasInitialValue",
-              "HasStorage",
-              "AccessControl"
-            ],
-            "hasStorage": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Optional",
-                    "printedName": "Swift.String?",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "String",
-                        "printedName": "Swift.String",
-                        "usr": "s:SS"
-                      }
-                    ],
-                    "usr": "s:Sq"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:8RoveriOS31ReceiptStreamingVideoExtraValueV5valueSSSgvg",
-                "mangledName": "$s8RoveriOS31ReceiptStreamingVideoExtraValueV5valueSSSgvg",
-                "moduleName": "RoveriOS",
-                "implicit": true,
-                "accessorKind": "get"
-              },
-              {
-                "kind": "Accessor",
-                "name": "Set",
-                "printedName": "Set()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Optional",
-                    "printedName": "Swift.String?",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "String",
-                        "printedName": "Swift.String",
-                        "usr": "s:SS"
-                      }
-                    ],
-                    "usr": "s:Sq"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:8RoveriOS31ReceiptStreamingVideoExtraValueV5valueSSSgvs",
-                "mangledName": "$s8RoveriOS31ReceiptStreamingVideoExtraValueV5valueSSSgvs",
-                "moduleName": "RoveriOS",
-                "implicit": true,
-                "accessorKind": "set"
-              },
-              {
-                "kind": "Accessor",
-                "name": "Modify",
-                "printedName": "Modify()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:8RoveriOS31ReceiptStreamingVideoExtraValueV5valueSSSgvM",
-                "mangledName": "$s8RoveriOS31ReceiptStreamingVideoExtraValueV5valueSSSgvM",
-                "moduleName": "RoveriOS",
-                "implicit": true,
-                "accessorKind": "_modify"
-              }
-            ]
-          },
-          {
-            "kind": "Constructor",
-            "name": "init",
-            "printedName": "init(from:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "ReceiptStreamingVideoExtraValue",
-                "printedName": "RoveriOS.ReceiptStreamingVideoExtraValue",
-                "usr": "s:8RoveriOS31ReceiptStreamingVideoExtraValueV"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Decoder",
-                "printedName": "any Swift.Decoder",
-                "usr": "s:s7DecoderP"
-              }
-            ],
-            "declKind": "Constructor",
-            "usr": "s:8RoveriOS31ReceiptStreamingVideoExtraValueV4fromACs7Decoder_p_tKcfc",
-            "mangledName": "$s8RoveriOS31ReceiptStreamingVideoExtraValueV4fromACs7Decoder_p_tKcfc",
-            "moduleName": "RoveriOS",
-            "implicit": true,
-            "throwing": true,
-            "init_kind": "Designated"
-          },
-          {
-            "kind": "Function",
-            "name": "encode",
-            "printedName": "encode(to:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Encoder",
-                "printedName": "any Swift.Encoder",
-                "usr": "s:s7EncoderP"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:8RoveriOS31ReceiptStreamingVideoExtraValueV6encode2toys7Encoder_p_tKF",
-            "mangledName": "$s8RoveriOS31ReceiptStreamingVideoExtraValueV6encode2toys7Encoder_p_tKF",
-            "moduleName": "RoveriOS",
-            "implicit": true,
-            "throwing": true,
-            "funcSelfKind": "NonMutating"
-          }
-        ],
-        "declKind": "Struct",
-        "usr": "s:8RoveriOS31ReceiptStreamingVideoExtraValueV",
-        "mangledName": "$s8RoveriOS31ReceiptStreamingVideoExtraValueV",
-        "moduleName": "RoveriOS",
-        "declAttributes": [
-          "AccessControl"
-        ],
-        "conformances": [
-          {
-            "kind": "Conformance",
-            "name": "Copyable",
-            "printedName": "Copyable",
-            "usr": "s:s8CopyableP",
-            "mangledName": "$ss8CopyableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Decodable",
-            "printedName": "Decodable",
-            "usr": "s:Se",
-            "mangledName": "$sSe"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Encodable",
-            "printedName": "Encodable",
-            "usr": "s:SE",
-            "mangledName": "$sSE"
-          }
-        ]
-      },
-      {
-        "kind": "TypeDecl",
         "name": "ReceiptStreamingVideo",
         "printedName": "ReceiptStreamingVideo",
         "children": [
@@ -29936,29 +29622,35 @@
               {
                 "kind": "TypeNominal",
                 "name": "Optional",
-                "printedName": "[RoveriOS.ReceiptStreamingVideoExtraValue]?",
+                "printedName": "[Swift.String : Swift.String]?",
                 "children": [
                   {
                     "kind": "TypeNominal",
-                    "name": "Array",
-                    "printedName": "[RoveriOS.ReceiptStreamingVideoExtraValue]",
+                    "name": "Dictionary",
+                    "printedName": "[Swift.String : Swift.String]",
                     "children": [
                       {
                         "kind": "TypeNominal",
-                        "name": "ReceiptStreamingVideoExtraValue",
-                        "printedName": "RoveriOS.ReceiptStreamingVideoExtraValue",
-                        "usr": "s:8RoveriOS31ReceiptStreamingVideoExtraValueV"
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
                       }
                     ],
-                    "usr": "s:Sa"
+                    "usr": "s:SD"
                   }
                 ],
                 "usr": "s:Sq"
               }
             ],
             "declKind": "Var",
-            "usr": "s:8RoveriOS21ReceiptStreamingVideoV11extraValuesSayAA0cdE10ExtraValueVGSgvp",
-            "mangledName": "$s8RoveriOS21ReceiptStreamingVideoV11extraValuesSayAA0cdE10ExtraValueVGSgvp",
+            "usr": "s:8RoveriOS21ReceiptStreamingVideoV11extraValuesSDyS2SGSgvp",
+            "mangledName": "$s8RoveriOS21ReceiptStreamingVideoV11extraValuesSDyS2SGSgvp",
             "moduleName": "RoveriOS",
             "declAttributes": [
               "HasInitialValue",
@@ -29975,29 +29667,35 @@
                   {
                     "kind": "TypeNominal",
                     "name": "Optional",
-                    "printedName": "[RoveriOS.ReceiptStreamingVideoExtraValue]?",
+                    "printedName": "[Swift.String : Swift.String]?",
                     "children": [
                       {
                         "kind": "TypeNominal",
-                        "name": "Array",
-                        "printedName": "[RoveriOS.ReceiptStreamingVideoExtraValue]",
+                        "name": "Dictionary",
+                        "printedName": "[Swift.String : Swift.String]",
                         "children": [
                           {
                             "kind": "TypeNominal",
-                            "name": "ReceiptStreamingVideoExtraValue",
-                            "printedName": "RoveriOS.ReceiptStreamingVideoExtraValue",
-                            "usr": "s:8RoveriOS31ReceiptStreamingVideoExtraValueV"
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
                           }
                         ],
-                        "usr": "s:Sa"
+                        "usr": "s:SD"
                       }
                     ],
                     "usr": "s:Sq"
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:8RoveriOS21ReceiptStreamingVideoV11extraValuesSayAA0cdE10ExtraValueVGSgvg",
-                "mangledName": "$s8RoveriOS21ReceiptStreamingVideoV11extraValuesSayAA0cdE10ExtraValueVGSgvg",
+                "usr": "s:8RoveriOS21ReceiptStreamingVideoV11extraValuesSDyS2SGSgvg",
+                "mangledName": "$s8RoveriOS21ReceiptStreamingVideoV11extraValuesSDyS2SGSgvg",
                 "moduleName": "RoveriOS",
                 "implicit": true,
                 "accessorKind": "get"
@@ -30015,29 +29713,35 @@
                   {
                     "kind": "TypeNominal",
                     "name": "Optional",
-                    "printedName": "[RoveriOS.ReceiptStreamingVideoExtraValue]?",
+                    "printedName": "[Swift.String : Swift.String]?",
                     "children": [
                       {
                         "kind": "TypeNominal",
-                        "name": "Array",
-                        "printedName": "[RoveriOS.ReceiptStreamingVideoExtraValue]",
+                        "name": "Dictionary",
+                        "printedName": "[Swift.String : Swift.String]",
                         "children": [
                           {
                             "kind": "TypeNominal",
-                            "name": "ReceiptStreamingVideoExtraValue",
-                            "printedName": "RoveriOS.ReceiptStreamingVideoExtraValue",
-                            "usr": "s:8RoveriOS31ReceiptStreamingVideoExtraValueV"
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
                           }
                         ],
-                        "usr": "s:Sa"
+                        "usr": "s:SD"
                       }
                     ],
                     "usr": "s:Sq"
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:8RoveriOS21ReceiptStreamingVideoV11extraValuesSayAA0cdE10ExtraValueVGSgvs",
-                "mangledName": "$s8RoveriOS21ReceiptStreamingVideoV11extraValuesSayAA0cdE10ExtraValueVGSgvs",
+                "usr": "s:8RoveriOS21ReceiptStreamingVideoV11extraValuesSDyS2SGSgvs",
+                "mangledName": "$s8RoveriOS21ReceiptStreamingVideoV11extraValuesSDyS2SGSgvs",
                 "moduleName": "RoveriOS",
                 "implicit": true,
                 "accessorKind": "set"
@@ -30054,8 +29758,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:8RoveriOS21ReceiptStreamingVideoV11extraValuesSayAA0cdE10ExtraValueVGSgvM",
-                "mangledName": "$s8RoveriOS21ReceiptStreamingVideoV11extraValuesSayAA0cdE10ExtraValueVGSgvM",
+                "usr": "s:8RoveriOS21ReceiptStreamingVideoV11extraValuesSDyS2SGSgvM",
+                "mangledName": "$s8RoveriOS21ReceiptStreamingVideoV11extraValuesSDyS2SGSgvM",
                 "moduleName": "RoveriOS",
                 "implicit": true,
                 "accessorKind": "_modify"
@@ -42522,7 +42226,7 @@
       "kind": "StringLiteral",
       "offset": 102,
       "length": 9,
-      "value": "\"v0.4.26\""
+      "value": "\"v0.4.28\""
     }
   ]
 }

@@ -327,6 +327,7 @@ public struct ReceiptItem : Swift.Codable {
 }
 public struct Receipt : Swift.Codable {
   public var roverMerchantId: Swift.Int?
+  public var roverMerchantVersion: Swift.Int?
   public var roverUserId: Swift.String?
   public var roverAccountId: Swift.String?
   public var roverSessionUUID: Swift.String?
@@ -401,16 +402,9 @@ public struct ReceiptStreamingVideoProfile : Swift.Codable {
   public func encode(to encoder: any Swift.Encoder) throws
   public init(from decoder: any Swift.Decoder) throws
 }
-public struct ReceiptStreamingVideoExtraValue : Swift.Codable {
-  public var service: Swift.String?
-  public var key: Swift.String?
-  public var value: Swift.String?
-  public func encode(to encoder: any Swift.Encoder) throws
-  public init(from decoder: any Swift.Decoder) throws
-}
 public struct ReceiptStreamingVideo : Swift.Codable {
   public var profile: RoveriOS.ReceiptStreamingVideoProfile?
-  public var extraValues: [RoveriOS.ReceiptStreamingVideoExtraValue]?
+  public var extraValues: [Swift.String : Swift.String]?
   public var seriesTitle: Swift.String?
   public var seriesAsin: Swift.String?
   public var seriesId: Swift.String?
