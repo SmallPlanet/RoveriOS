@@ -38170,7 +38170,7 @@
           {
             "kind": "Function",
             "name": "configure",
-            "printedName": "configure(licenseKey:environment:deviceId:maxConcurrentCollections:callback:)",
+            "printedName": "configure(licenseKey:environment:deviceId:maxConcurrentCollections:suppressVersionNotice:callback:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -38203,6 +38203,13 @@
                 "printedName": "Swift.Int",
                 "hasDefaultArg": true,
                 "usr": "s:Si"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "hasDefaultArg": true,
+                "usr": "s:Sb"
               },
               {
                 "kind": "TypeFunc",
@@ -38253,8 +38260,8 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:8RoveriOS5RoverC9configure10licenseKey11environment8deviceId24maxConcurrentCollections8callbackySS_AC11EnvironmentOSSSiySayAA8MerchantVG_SSSgtctF",
-            "mangledName": "$s8RoveriOS5RoverC9configure10licenseKey11environment8deviceId24maxConcurrentCollections8callbackySS_AC11EnvironmentOSSSiySayAA8MerchantVG_SSSgtctF",
+            "usr": "s:8RoveriOS5RoverC9configure10licenseKey11environment8deviceId24maxConcurrentCollections21suppressVersionNotice8callbackySS_AC11EnvironmentOSSSiSbySayAA8MerchantVG_SSSgtctF",
+            "mangledName": "$s8RoveriOS5RoverC9configure10licenseKey11environment8deviceId24maxConcurrentCollections21suppressVersionNotice8callbackySS_AC11EnvironmentOSSSiSbySayAA8MerchantVG_SSSgtctF",
             "moduleName": "RoveriOS",
             "declAttributes": [
               "AccessControl",
@@ -42121,91 +42128,98 @@
     {
       "filePath": "\/Users\/rjbowli\/Development\/smallplanet\/smallplanet_RoveriOS_SDK\/RoveriOS\/Rover.swift",
       "kind": "StringLiteral",
-      "offset": 3519,
+      "offset": 3647,
       "length": 9,
       "value": "\"unknown\""
     },
     {
       "filePath": "\/Users\/rjbowli\/Development\/smallplanet\/smallplanet_RoveriOS_SDK\/RoveriOS\/Rover.swift",
       "kind": "IntegerLiteral",
-      "offset": 3588,
+      "offset": 3716,
       "length": 1,
       "value": "4"
+    },
+    {
+      "filePath": "\/Users\/rjbowli\/Development\/smallplanet\/smallplanet_RoveriOS_SDK\/RoveriOS\/Rover.swift",
+      "kind": "BooleanLiteral",
+      "offset": 3775,
+      "length": 5,
+      "value": "false"
     },
     {
       "filePath": "\/Users\/rjbowli\/Development\/smallplanet\/smallplanet_RoveriOS_SDK\/RoveriOS\/Rover.swift",
       "kind": "StringLiteral",
-      "offset": 9104,
+      "offset": 9389,
       "length": 9,
       "value": "\"unknown\""
     },
     {
       "filePath": "\/Users\/rjbowli\/Development\/smallplanet\/smallplanet_RoveriOS_SDK\/RoveriOS\/Rover.swift",
       "kind": "IntegerLiteral",
-      "offset": 9173,
+      "offset": 9458,
       "length": 1,
       "value": "4"
     },
     {
       "filePath": "\/Users\/rjbowli\/Development\/smallplanet\/smallplanet_RoveriOS_SDK\/RoveriOS\/Rover.swift",
       "kind": "IntegerLiteral",
-      "offset": 14150,
+      "offset": 14435,
       "length": 2,
       "value": "16"
     },
     {
       "filePath": "\/Users\/rjbowli\/Development\/smallplanet\/smallplanet_RoveriOS_SDK\/RoveriOS\/Rover.swift",
       "kind": "IntegerLiteral",
-      "offset": 14200,
+      "offset": 14485,
       "length": 2,
       "value": "16"
     },
     {
       "filePath": "\/Users\/rjbowli\/Development\/smallplanet\/smallplanet_RoveriOS_SDK\/RoveriOS\/Rover.swift",
       "kind": "IntegerLiteral",
-      "offset": 14250,
+      "offset": 14535,
       "length": 2,
       "value": "16"
     },
     {
       "filePath": "\/Users\/rjbowli\/Development\/smallplanet\/smallplanet_RoveriOS_SDK\/RoveriOS\/Rover.swift",
       "kind": "IntegerLiteral",
-      "offset": 14303,
+      "offset": 14588,
       "length": 1,
       "value": "8"
     },
     {
       "filePath": "\/Users\/rjbowli\/Development\/smallplanet\/smallplanet_RoveriOS_SDK\/RoveriOS\/Rover.swift",
       "kind": "BooleanLiteral",
-      "offset": 14355,
+      "offset": 14640,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/rjbowli\/Development\/smallplanet\/smallplanet_RoveriOS_SDK\/RoveriOS\/Rover.swift",
       "kind": "BooleanLiteral",
-      "offset": 14413,
+      "offset": 14698,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/rjbowli\/Development\/smallplanet\/smallplanet_RoveriOS_SDK\/RoveriOS\/Rover.swift",
       "kind": "BooleanLiteral",
-      "offset": 14464,
+      "offset": 14749,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/rjbowli\/Development\/smallplanet\/smallplanet_RoveriOS_SDK\/RoveriOS\/Rover.swift",
       "kind": "BooleanLiteral",
-      "offset": 14514,
+      "offset": 14799,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/rjbowli\/Development\/smallplanet\/smallplanet_RoveriOS_SDK\/RoveriOS\/Rover.swift",
       "kind": "BooleanLiteral",
-      "offset": 14582,
+      "offset": 14867,
       "length": 4,
       "value": "true"
     },
@@ -42284,7 +42298,7 @@
       "kind": "StringLiteral",
       "offset": 102,
       "length": 9,
-      "value": "\"v0.4.29\""
+      "value": "\"v0.4.30\""
     },
     {
       "filePath": "\/Users\/rjbowli\/Development\/smallplanet\/smallplanet_RoveriOS_SDK\/RoveriOS\/Rover+Browser.swift",
