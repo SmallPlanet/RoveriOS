@@ -14,43 +14,43 @@
 		</data>
 		<key>Modules/RoveriOS.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		N6OBEsnuCnQJj+VrZUJ56PwLVtc=
+		OFOjc3ZkOrR8geSpwm5JAgskW4Q=
 		</data>
 		<key>Modules/RoveriOS.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		fje3BU8qFMwNE7JxRLMKi4pE+rM=
+		q6MT0UKVl3R9PXzW5tYcVWEoVOg=
 		</data>
 		<key>Modules/RoveriOS.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		5cd8fQt8rEnINl5FQmzZjvZ9oqo=
+		5qdNKaY1GGdVg6r68QvtIgiG/Xg=
 		</data>
 		<key>Modules/RoveriOS.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		fje3BU8qFMwNE7JxRLMKi4pE+rM=
+		q6MT0UKVl3R9PXzW5tYcVWEoVOg=
 		</data>
 		<key>Modules/RoveriOS.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		v+5CAFqTA50Rp0JDPx15D4fiqYc=
+		jzym74UVe29dTD/aARA7Zlj3mI0=
 		</data>
 		<key>Modules/RoveriOS.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		N6OBEsnuCnQJj+VrZUJ56PwLVtc=
+		OFOjc3ZkOrR8geSpwm5JAgskW4Q=
 		</data>
 		<key>Modules/RoveriOS.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		NWYiLrXkzbEsknIDyG8G4vuzepo=
+		CK/F4mWnp9L9JdKvBDTIsb+td6A=
 		</data>
 		<key>Modules/RoveriOS.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		x0wEULdBiu390wzZn3ko33KRgmg=
+		hStsiwtVoni7d6OEoWv4VvwGZuk=
 		</data>
 		<key>Modules/RoveriOS.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		NWYiLrXkzbEsknIDyG8G4vuzepo=
+		CK/F4mWnp9L9JdKvBDTIsb+td6A=
 		</data>
 		<key>Modules/RoveriOS.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		N4YpmS1kjJHgd9OkDXW3fnjvg3k=
+		Utnx97ts1On7hsgZzGvpmP82mQg=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -70,70 +70,70 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			43g3pRodocArwL6oDuXx9Bvlxq3REQzGJj2EG+UXi7I=
+			lVHeJj07yHcruOBOV/yXRaNiqAFPSUM2Vl4bDyRW3gU=
 			</data>
 		</dict>
 		<key>Modules/RoveriOS.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			WnWZU/OEcP1J5NFANpvz3MEJ//RPGHq6AD2cTENv3vI=
+			5vsKn+D0yUKBp/ENCJlFkJT2/wBGOpWdN2zwzynzuTc=
 			</data>
 		</dict>
 		<key>Modules/RoveriOS.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			D+3PmstFqcQgYK1qnS7FT53vIts+A3vRvg9CA9SDtgE=
+			gXg0/fr786ij1brqrYSoXz5F/kWTr+uRiNl6HbSi7qs=
 			</data>
 		</dict>
 		<key>Modules/RoveriOS.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			WnWZU/OEcP1J5NFANpvz3MEJ//RPGHq6AD2cTENv3vI=
+			5vsKn+D0yUKBp/ENCJlFkJT2/wBGOpWdN2zwzynzuTc=
 			</data>
 		</dict>
 		<key>Modules/RoveriOS.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			qJMRxH9VM6oFWsJSV0ZtZ04IzRosbHfu43W53/nhA0k=
+			xsLZD2u3KuXnJkOmj5xCK4jL/DKOtWaPCdEALXboWA8=
 			</data>
 		</dict>
 		<key>Modules/RoveriOS.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			43g3pRodocArwL6oDuXx9Bvlxq3REQzGJj2EG+UXi7I=
+			lVHeJj07yHcruOBOV/yXRaNiqAFPSUM2Vl4bDyRW3gU=
 			</data>
 		</dict>
 		<key>Modules/RoveriOS.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			Fuit7/imlFGZKtzZcdYo9NpLHOSS98HJppJmL67xwAU=
+			fBvSzOnEIYdZ6ynW5GcxDS8MMf3XRUWeTFKb36DYkSY=
 			</data>
 		</dict>
 		<key>Modules/RoveriOS.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			gclw/bLAPy5xrDSMuN4SvCQDFkCg4W6Xjl3/Ix9vHO8=
+			o4CZj8eFI6qsoEY0eWdHxw9pFBx3LfWbF6vWMetLVkk=
 			</data>
 		</dict>
 		<key>Modules/RoveriOS.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			Fuit7/imlFGZKtzZcdYo9NpLHOSS98HJppJmL67xwAU=
+			fBvSzOnEIYdZ6ynW5GcxDS8MMf3XRUWeTFKb36DYkSY=
 			</data>
 		</dict>
 		<key>Modules/RoveriOS.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			lhID9D9y5yGMirCWNILbTpkGtazYVeB+6iOPH1Jcn2M=
+			+MvSJwTthPQ2vizDIkmq1Ok1gXWOkmC/YaVJBa+vR4I=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

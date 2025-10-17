@@ -169,4 +169,4 @@ Clear the following dialog and then go to your target's General settings.  In th
 ![](meta/select_embed.png)
 
 
-Latest version: v0.4.30
+Latest version: v0.4.32

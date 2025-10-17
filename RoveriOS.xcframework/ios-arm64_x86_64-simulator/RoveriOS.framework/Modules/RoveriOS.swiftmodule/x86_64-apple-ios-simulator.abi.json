@@ -7934,6 +7934,367 @@
       },
       {
         "kind": "TypeDecl",
+        "name": "RoverServerEdgeConfig",
+        "printedName": "RoverServerEdgeConfig",
+        "children": [
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(authorization:listenAddress:listenPort:resultsUrl:receiptsUrl:statusUrl:debug:verboseErrors:permissiveResponses:routeAddress:routePort:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "RoverServerEdgeConfig",
+                "printedName": "RoveriOS.RoverServerEdgeConfig",
+                "usr": "s:8RoveriOS21RoverServerEdgeConfigV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.Int?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.Int?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:8RoveriOS21RoverServerEdgeConfigV13authorization13listenAddress0H4Port10resultsUrl08receiptsL006statusL05debug13verboseErrors19permissiveResponses05routeI00tJ0ACSSSg_AOSiSgSSA2OS3bAoPtcfc",
+            "mangledName": "$s8RoveriOS21RoverServerEdgeConfigV13authorization13listenAddress0H4Port10resultsUrl08receiptsL006statusL05debug13verboseErrors19permissiveResponses05routeI00tJ0ACSSSg_AOSiSgSSA2OS3bAoPtcfc",
+            "moduleName": "RoveriOS",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(authorization:requestsUrl:resultsUrl:receiptsUrl:statusUrl:debug:verboseErrors:permissiveResponses:routeAddress:routePort:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "RoverServerEdgeConfig",
+                "printedName": "RoveriOS.RoverServerEdgeConfig",
+                "usr": "s:8RoveriOS21RoverServerEdgeConfigV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.Int?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:8RoveriOS21RoverServerEdgeConfigV13authorization11requestsUrl07resultsI008receiptsI006statusI05debug13verboseErrors19permissiveResponses12routeAddress0R4PortACSSSg_S2SA2NS3bANSiSgtcfc",
+            "mangledName": "$s8RoveriOS21RoverServerEdgeConfigV13authorization11requestsUrl07resultsI008receiptsI006statusI05debug13verboseErrors19permissiveResponses12routeAddress0R4PortACSSSg_S2SA2NS3bANSiSgtcfc",
+            "moduleName": "RoveriOS",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(from:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "RoverServerEdgeConfig",
+                "printedName": "RoveriOS.RoverServerEdgeConfig",
+                "usr": "s:8RoveriOS21RoverServerEdgeConfigV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Decoder",
+                "printedName": "any Swift.Decoder",
+                "usr": "s:s7DecoderP"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:8RoveriOS21RoverServerEdgeConfigV4fromACs7Decoder_p_tKcfc",
+            "mangledName": "$s8RoveriOS21RoverServerEdgeConfigV4fromACs7Decoder_p_tKcfc",
+            "moduleName": "RoveriOS",
+            "implicit": true,
+            "throwing": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "encode",
+            "printedName": "encode(to:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Encoder",
+                "printedName": "any Swift.Encoder",
+                "usr": "s:s7EncoderP"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:8RoveriOS21RoverServerEdgeConfigV6encode2toys7Encoder_p_tKF",
+            "mangledName": "$s8RoveriOS21RoverServerEdgeConfigV6encode2toys7Encoder_p_tKF",
+            "moduleName": "RoveriOS",
+            "implicit": true,
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:8RoveriOS21RoverServerEdgeConfigV",
+        "mangledName": "$s8RoveriOS21RoverServerEdgeConfigV",
+        "moduleName": "RoveriOS",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Decodable",
+            "printedName": "Decodable",
+            "usr": "s:Se",
+            "mangledName": "$sSe"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Encodable",
+            "printedName": "Encodable",
+            "usr": "s:SE",
+            "mangledName": "$sSE"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
         "name": "ScrapeRequest",
         "printedName": "ScrapeRequest",
         "children": [
@@ -9877,6 +10238,117 @@
           },
           {
             "kind": "Var",
+            "name": "isConnectionOnly",
+            "printedName": "isConnectionOnly",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.Bool?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:8RoveriOS13ScrapeRequestV16isConnectionOnlySbSgvp",
+            "mangledName": "$s8RoveriOS13ScrapeRequestV16isConnectionOnlySbSgvp",
+            "moduleName": "RoveriOS",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.Bool?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Bool",
+                        "printedName": "Swift.Bool",
+                        "usr": "s:Sb"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8RoveriOS13ScrapeRequestV16isConnectionOnlySbSgvg",
+                "mangledName": "$s8RoveriOS13ScrapeRequestV16isConnectionOnlySbSgvg",
+                "moduleName": "RoveriOS",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.Bool?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Bool",
+                        "printedName": "Swift.Bool",
+                        "usr": "s:Sb"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8RoveriOS13ScrapeRequestV16isConnectionOnlySbSgvs",
+                "mangledName": "$s8RoveriOS13ScrapeRequestV16isConnectionOnlySbSgvs",
+                "moduleName": "RoveriOS",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8RoveriOS13ScrapeRequestV16isConnectionOnlySbSgvM",
+                "mangledName": "$s8RoveriOS13ScrapeRequestV16isConnectionOnlySbSgvM",
+                "moduleName": "RoveriOS",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
             "name": "hasBackend",
             "printedName": "hasBackend",
             "children": [
@@ -11284,7 +11756,7 @@
           {
             "kind": "Constructor",
             "name": "init",
-            "printedName": "init(delegateUUID:userId:applicationId:account:password:cookiesBase64:merchantId:javascript:javascriptUrl:javascriptVersion:fromDate:toDate:serviceGroupRequests:tier1BatchSize:tier2BatchSize:tier3BatchSize:receiptsBatchSize:collectItemInfo:collectSourceData:isEphemeral:hasBackend:allowUserInteractionRequired:exclusivityId:extraInfo:appInfo:featureFlags:proxy:isUnitTest:isBackgroundAppRefresh:overrideMimicDesktopIfPossible:overrideWebviewBlockImageLoading:allowServerInteractionRequired:roverLicense:)",
+            "printedName": "init(delegateUUID:userId:applicationId:account:password:cookiesBase64:merchantId:javascript:javascriptUrl:javascriptVersion:fromDate:toDate:serviceGroupRequests:tier1BatchSize:tier2BatchSize:tier3BatchSize:receiptsBatchSize:collectItemInfo:collectSourceData:isEphemeral:isConnectionOnly:hasBackend:allowUserInteractionRequired:exclusivityId:extraInfo:appInfo:featureFlags:proxy:isUnitTest:isBackgroundAppRefresh:overrideMimicDesktopIfPossible:overrideWebviewBlockImageLoading:allowServerInteractionRequired:roverLicense:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -11579,6 +12051,20 @@
               {
                 "kind": "TypeNominal",
                 "name": "Optional",
+                "printedName": "Swift.Bool?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
                 "printedName": "Swift.Int?",
                 "children": [
                   {
@@ -11740,8 +12226,8 @@
               }
             ],
             "declKind": "Constructor",
-            "usr": "s:8RoveriOS13ScrapeRequestV12delegateUUID6userId011applicationH07account8password13cookiesBase6408merchantH010javascript0O3Url0O7Version8fromDate02toS020serviceGroupRequests14tier1BatchSize05tier2yZ005tier3yZ008receiptsyZ015collectItemInfo17collectSourceData11isEphemeral10hasBackend28allowUserInteractionRequired011exclusivityH09extraInfo7appInfo12featureFlags5proxy10isUnitTest22isBackgroundAppRefresh30overrideMimicDesktopIfPossible32overrideWebviewBlockImageLoading30allowServerInteractionRequired12roverLicenseACSS_S4SSgA9_SiSg10Foundation4DataVSgA9_A10_A11_0S0VSgA17_SayAA07ServicevD0VGSgA10_A10_A10_A10_SbSgA22_A22_A22_A22_A10_SaySSGSgA9_A24_A9_A22_SiA22_A22_A22_A9_tcfc",
-            "mangledName": "$s8RoveriOS13ScrapeRequestV12delegateUUID6userId011applicationH07account8password13cookiesBase6408merchantH010javascript0O3Url0O7Version8fromDate02toS020serviceGroupRequests14tier1BatchSize05tier2yZ005tier3yZ008receiptsyZ015collectItemInfo17collectSourceData11isEphemeral10hasBackend28allowUserInteractionRequired011exclusivityH09extraInfo7appInfo12featureFlags5proxy10isUnitTest22isBackgroundAppRefresh30overrideMimicDesktopIfPossible32overrideWebviewBlockImageLoading30allowServerInteractionRequired12roverLicenseACSS_S4SSgA9_SiSg10Foundation4DataVSgA9_A10_A11_0S0VSgA17_SayAA07ServicevD0VGSgA10_A10_A10_A10_SbSgA22_A22_A22_A22_A10_SaySSGSgA9_A24_A9_A22_SiA22_A22_A22_A9_tcfc",
+            "usr": "s:8RoveriOS13ScrapeRequestV12delegateUUID6userId011applicationH07account8password13cookiesBase6408merchantH010javascript0O3Url0O7Version8fromDate02toS020serviceGroupRequests14tier1BatchSize05tier2yZ005tier3yZ008receiptsyZ015collectItemInfo17collectSourceData11isEphemeral16isConnectionOnly10hasBackend28allowUserInteractionRequired011exclusivityH09extraInfo7appInfo12featureFlags5proxy10isUnitTest22isBackgroundAppRefresh30overrideMimicDesktopIfPossible32overrideWebviewBlockImageLoading30allowServerInteractionRequired12roverLicenseACSS_S4SSgA10_SiSg10Foundation4DataVSgA10_A11_A12_0S0VSgA18_SayAA07ServicevD0VGSgA11_A11_A11_A11_SbSgA23_A23_A23_A23_A23_A11_SaySSGSgA10_A25_A10_A23_SiA23_A23_A23_A10_tcfc",
+            "mangledName": "$s8RoveriOS13ScrapeRequestV12delegateUUID6userId011applicationH07account8password13cookiesBase6408merchantH010javascript0O3Url0O7Version8fromDate02toS020serviceGroupRequests14tier1BatchSize05tier2yZ005tier3yZ008receiptsyZ015collectItemInfo17collectSourceData11isEphemeral16isConnectionOnly10hasBackend28allowUserInteractionRequired011exclusivityH09extraInfo7appInfo12featureFlags5proxy10isUnitTest22isBackgroundAppRefresh30overrideMimicDesktopIfPossible32overrideWebviewBlockImageLoading30allowServerInteractionRequired12roverLicenseACSS_S4SSgA10_SiSg10Foundation4DataVSgA10_A11_A12_0S0VSgA18_SayAA07ServicevD0VGSgA11_A11_A11_A11_SbSgA23_A23_A23_A23_A23_A11_SaySSGSgA10_A25_A10_A23_SiA23_A23_A23_A10_tcfc",
             "moduleName": "RoveriOS",
             "declAttributes": [
               "AccessControl"
@@ -38351,7 +38837,7 @@
           {
             "kind": "Function",
             "name": "collect",
-            "printedName": "collect(userId:account:password:cookiesBase64:merchantId:javascript:javascriptUrl:javascriptVersion:fromDate:toDate:serviceGroupRequests:tier1BatchSize:tier2BatchSize:tier3BatchSize:receiptsBatchSize:collectItemInfo:collectSourceData:isEphemeral:hasBackend:allowUserInteractionRequired:appInfo:featureFlags:overrideMimicDesktopIfPossible:overrideWebviewBlockImageLoading:delegate:)",
+            "printedName": "collect(userId:account:password:cookiesBase64:merchantId:javascript:javascriptUrl:javascriptVersion:fromDate:toDate:serviceGroupRequests:tier1BatchSize:tier2BatchSize:tier3BatchSize:receiptsBatchSize:collectItemInfo:collectSourceData:isEphemeral:isConnectionOnly:hasBackend:allowUserInteractionRequired:appInfo:featureFlags:overrideMimicDesktopIfPossible:overrideWebviewBlockImageLoading:delegate:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -38602,6 +39088,13 @@
               },
               {
                 "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "hasDefaultArg": true,
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
                 "name": "Optional",
                 "printedName": "Swift.String?",
                 "children": [
@@ -38676,8 +39169,8 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:8RoveriOS5RoverC7collect6userId7account8password13cookiesBase6408merchantF010javascript0L3Url0L7Version8fromDate02toP020serviceGroupRequests14tier1BatchSize05tier2vW005tier3vW008receiptsvW00D8ItemInfo0D10SourceData11isEphemeral10hasBackend28allowUserInteractionRequired7appInfo12featureFlags30overrideMimicDesktopIfPossible32overrideWebviewBlockImageLoading8delegateySSSg_A2_A2_A2_SiSg10Foundation4DataVSgA2_A3_A4_0P0VA9_SgSayAA07ServiceS7RequestVGSgS4iSbSgA15_S3bA2_SaySSGSgA15_A15_AA0C8DelegateCtF",
-            "mangledName": "$s8RoveriOS5RoverC7collect6userId7account8password13cookiesBase6408merchantF010javascript0L3Url0L7Version8fromDate02toP020serviceGroupRequests14tier1BatchSize05tier2vW005tier3vW008receiptsvW00D8ItemInfo0D10SourceData11isEphemeral10hasBackend28allowUserInteractionRequired7appInfo12featureFlags30overrideMimicDesktopIfPossible32overrideWebviewBlockImageLoading8delegateySSSg_A2_A2_A2_SiSg10Foundation4DataVSgA2_A3_A4_0P0VA9_SgSayAA07ServiceS7RequestVGSgS4iSbSgA15_S3bA2_SaySSGSgA15_A15_AA0C8DelegateCtF",
+            "usr": "s:8RoveriOS5RoverC7collect6userId7account8password13cookiesBase6408merchantF010javascript0L3Url0L7Version8fromDate02toP020serviceGroupRequests14tier1BatchSize05tier2vW005tier3vW008receiptsvW00D8ItemInfo0D10SourceData11isEphemeral16isConnectionOnly10hasBackend28allowUserInteractionRequired7appInfo12featureFlags30overrideMimicDesktopIfPossible32overrideWebviewBlockImageLoading8delegateySSSg_A3_A3_A3_SiSg10Foundation4DataVSgA3_A4_A5_0P0VA10_SgSayAA07ServiceS7RequestVGSgS4iSbSgA16_S4bA3_SaySSGSgA16_A16_AA0C8DelegateCtF",
+            "mangledName": "$s8RoveriOS5RoverC7collect6userId7account8password13cookiesBase6408merchantF010javascript0L3Url0L7Version8fromDate02toP020serviceGroupRequests14tier1BatchSize05tier2vW005tier3vW008receiptsvW00D8ItemInfo0D10SourceData11isEphemeral16isConnectionOnly10hasBackend28allowUserInteractionRequired7appInfo12featureFlags30overrideMimicDesktopIfPossible32overrideWebviewBlockImageLoading8delegateySSSg_A3_A3_A3_SiSg10Foundation4DataVSgA3_A4_A5_0P0VA10_SgSayAA07ServiceS7RequestVGSgS4iSbSgA16_S4bA3_SaySSGSgA16_A16_AA0C8DelegateCtF",
             "moduleName": "RoveriOS",
             "declAttributes": [
               "AccessControl",
@@ -39369,8 +39862,8 @@
           },
           {
             "kind": "Function",
-            "name": "pull",
-            "printedName": "pull(authorization:requestsUrl:resultsUrl:statusUrl:_:)",
+            "name": "edgePull",
+            "printedName": "edgePull(authorization:requestsUrl:resultsUrl:receiptsUrl:statusUrl:debug:verboseErrors:permissiveResponses:routeAddress:routePort:_:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -39379,9 +39872,17 @@
               },
               {
                 "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
               },
               {
                 "kind": "TypeNominal",
@@ -39405,6 +39906,66 @@
                     "name": "String",
                     "printedName": "Swift.String",
                     "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.Int?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
                   }
                 ],
                 "usr": "s:Sq"
@@ -39450,8 +40011,8 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:8RoveriOS5RoverC4pull13authorization11requestsUrl07resultsG006statusG0_ySS_S3SSgySi_AItctF",
-            "mangledName": "$s8RoveriOS5RoverC4pull13authorization11requestsUrl07resultsG006statusG0_ySS_S3SSgySi_AItctF",
+            "usr": "s:8RoveriOS5RoverC8edgePull13authorization11requestsUrl07resultsH008receiptsH006statusH05debug13verboseErrors19permissiveResponses12routeAddress0Q4Port_ySSSg_S2SA2OS3bAOSiSgySi_AOtctF",
+            "mangledName": "$s8RoveriOS5RoverC8edgePull13authorization11requestsUrl07resultsH008receiptsH006statusH05debug13verboseErrors19permissiveResponses12routeAddress0Q4Port_ySSSg_S2SA2OS3bAOSiSgySi_AOtctF",
             "moduleName": "RoveriOS",
             "declAttributes": [
               "AccessControl",
@@ -39461,8 +40022,8 @@
           },
           {
             "kind": "Function",
-            "name": "pull",
-            "printedName": "pull(authorization:requestsUrl:resultsUrl:statusUrl:)",
+            "name": "edgePull",
+            "printedName": "edgePull(authorization:requestsUrl:resultsUrl:receiptsUrl:statusUrl:debug:verboseErrors:permissiveResponses:routeAddress:routePort:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -39493,9 +40054,17 @@
               },
               {
                 "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
               },
               {
                 "kind": "TypeNominal",
@@ -39522,16 +40091,257 @@
                   }
                 ],
                 "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.Int?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "usr": "s:Sq"
               }
             ],
             "declKind": "Func",
-            "usr": "s:8RoveriOS5RoverC4pull13authorization11requestsUrl07resultsG006statusG0Si_SSSgtSS_S2SAItYaF",
-            "mangledName": "$s8RoveriOS5RoverC4pull13authorization11requestsUrl07resultsG006statusG0Si_SSSgtSS_S2SAItYaF",
+            "usr": "s:8RoveriOS5RoverC8edgePull13authorization11requestsUrl07resultsH008receiptsH006statusH05debug13verboseErrors19permissiveResponses12routeAddress0Q4PortSi_SSSgtAO_S2SA2OS3bAOSiSgtYaF",
+            "mangledName": "$s8RoveriOS5RoverC8edgePull13authorization11requestsUrl07resultsH008receiptsH006statusH05debug13verboseErrors19permissiveResponses12routeAddress0Q4PortSi_SSSgtAO_S2SA2OS3bAOSiSgtYaF",
             "moduleName": "RoveriOS",
             "intro_iOS": "13.0.0",
             "declAttributes": [
               "AccessControl",
               "Available"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "edgePush",
+            "printedName": "edgePush(authorization:listenAddress:listenPort:resultsUrl:receiptsUrl:statusUrl:debug:permissiveResponses:verboseErrors:routeAddress:routePort:_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.Int?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.Int?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Swift.Int, Swift.String?) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Tuple",
+                    "printedName": "(Swift.Int, Swift.String?)",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Int",
+                        "printedName": "Swift.Int",
+                        "usr": "s:Si"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "Swift.String?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:8RoveriOS5RoverC8edgePush13authorization13listenAddress0G4Port10resultsUrl08receiptsK006statusK05debug19permissiveResponses13verboseErrors05routeH00sI0_ySSSg_APSiSgSSA2PS3bApQySi_APtctF",
+            "mangledName": "$s8RoveriOS5RoverC8edgePush13authorization13listenAddress0G4Port10resultsUrl08receiptsK006statusK05debug19permissiveResponses13verboseErrors05routeH00sI0_ySSSg_APSiSgSSA2PS3bApQySi_APtctF",
+            "moduleName": "RoveriOS",
+            "declAttributes": [
+              "AccessControl"
             ],
             "funcSelfKind": "NonMutating"
           },
@@ -41944,7 +42754,7 @@
     {
       "filePath": "\/Users\/rjbowli\/Development\/smallplanet\/smallplanet_RoveriOS_SDK\/RoveriOS\/CopyFromCore\/Run+Receipt.swift",
       "kind": "BooleanLiteral",
-      "offset": 9467,
+      "offset": 11623,
       "length": 4,
       "value": "true"
     },
@@ -42070,14 +42880,21 @@
     {
       "filePath": "\/Users\/rjbowli\/Development\/smallplanet\/smallplanet_RoveriOS_SDK\/RoveriOS\/Rover.swift",
       "kind": "BooleanLiteral",
-      "offset": 14799,
+      "offset": 14805,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/rjbowli\/Development\/smallplanet\/smallplanet_RoveriOS_SDK\/RoveriOS\/Rover.swift",
       "kind": "BooleanLiteral",
-      "offset": 14867,
+      "offset": 14855,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/rjbowli\/Development\/smallplanet\/smallplanet_RoveriOS_SDK\/RoveriOS\/Rover.swift",
+      "kind": "BooleanLiteral",
+      "offset": 14923,
       "length": 4,
       "value": "true"
     },
@@ -42240,7 +43057,7 @@
       "kind": "StringLiteral",
       "offset": 102,
       "length": 9,
-      "value": "\"v0.4.30\""
+      "value": "\"v0.4.32\""
     }
   ]
 }

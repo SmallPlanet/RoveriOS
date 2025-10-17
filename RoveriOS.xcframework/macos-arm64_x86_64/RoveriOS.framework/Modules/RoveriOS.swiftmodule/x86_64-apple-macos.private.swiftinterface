@@ -171,6 +171,12 @@ public struct ServiceGroupRequest : Swift.Codable {
   public func encode(to encoder: any Swift.Encoder) throws
   public init(from decoder: any Swift.Decoder) throws
 }
+public struct RoverServerEdgeConfig : Swift.Codable {
+  public init(authorization: Swift.String?, listenAddress: Swift.String?, listenPort: Swift.Int?, resultsUrl: Swift.String, receiptsUrl: Swift.String?, statusUrl: Swift.String?, debug: Swift.Bool, verboseErrors: Swift.Bool, permissiveResponses: Swift.Bool, routeAddress: Swift.String?, routePort: Swift.Int?)
+  public init(authorization: Swift.String?, requestsUrl: Swift.String, resultsUrl: Swift.String, receiptsUrl: Swift.String?, statusUrl: Swift.String?, debug: Swift.Bool, verboseErrors: Swift.Bool, permissiveResponses: Swift.Bool, routeAddress: Swift.String?, routePort: Swift.Int?)
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
 public struct ScrapeRequest : Swift.Codable {
   public var ScrapeRequest: Swift.Bool
   public let delegateUUID: Swift.String
@@ -193,6 +199,7 @@ public struct ScrapeRequest : Swift.Codable {
   public var collectItemInfo: Swift.Bool?
   public var collectSourceData: Swift.Bool?
   public var isEphemeral: Swift.Bool?
+  public var isConnectionOnly: Swift.Bool?
   public var hasBackend: Swift.Bool?
   public var allowUserInteractionRequired: Swift.Bool?
   public var exclusivityId: Swift.Int?
@@ -206,7 +213,7 @@ public struct ScrapeRequest : Swift.Codable {
   public var overrideWebviewBlockImageLoading: Swift.Bool?
   public var allowServerInteractionRequired: Swift.Bool?
   public var roverLicense: Swift.String?
-  public init(delegateUUID: Swift.String, userId: Swift.String, applicationId: Swift.String, account: Swift.String, password: Swift.String?, cookiesBase64: Swift.String?, merchantId: Swift.Int?, javascript: Foundation.Data?, javascriptUrl: Swift.String?, javascriptVersion: Swift.Int?, fromDate: Foundation.Date?, toDate: Foundation.Date?, serviceGroupRequests: [RoveriOS.ServiceGroupRequest]?, tier1BatchSize: Swift.Int?, tier2BatchSize: Swift.Int?, tier3BatchSize: Swift.Int?, receiptsBatchSize: Swift.Int?, collectItemInfo: Swift.Bool?, collectSourceData: Swift.Bool?, isEphemeral: Swift.Bool?, hasBackend: Swift.Bool?, allowUserInteractionRequired: Swift.Bool?, exclusivityId: Swift.Int?, extraInfo: [Swift.String]?, appInfo: Swift.String?, featureFlags: [Swift.String]?, proxy: Swift.String?, isUnitTest: Swift.Bool?, isBackgroundAppRefresh: Swift.Int, overrideMimicDesktopIfPossible: Swift.Bool?, overrideWebviewBlockImageLoading: Swift.Bool?, allowServerInteractionRequired: Swift.Bool?, roverLicense: Swift.String?)
+  public init(delegateUUID: Swift.String, userId: Swift.String, applicationId: Swift.String, account: Swift.String, password: Swift.String?, cookiesBase64: Swift.String?, merchantId: Swift.Int?, javascript: Foundation.Data?, javascriptUrl: Swift.String?, javascriptVersion: Swift.Int?, fromDate: Foundation.Date?, toDate: Foundation.Date?, serviceGroupRequests: [RoveriOS.ServiceGroupRequest]?, tier1BatchSize: Swift.Int?, tier2BatchSize: Swift.Int?, tier3BatchSize: Swift.Int?, receiptsBatchSize: Swift.Int?, collectItemInfo: Swift.Bool?, collectSourceData: Swift.Bool?, isEphemeral: Swift.Bool?, isConnectionOnly: Swift.Bool?, hasBackend: Swift.Bool?, allowUserInteractionRequired: Swift.Bool?, exclusivityId: Swift.Int?, extraInfo: [Swift.String]?, appInfo: Swift.String?, featureFlags: [Swift.String]?, proxy: Swift.String?, isUnitTest: Swift.Bool?, isBackgroundAppRefresh: Swift.Int, overrideMimicDesktopIfPossible: Swift.Bool?, overrideWebviewBlockImageLoading: Swift.Bool?, allowServerInteractionRequired: Swift.Bool?, roverLicense: Swift.String?)
   public func encode(to encoder: any Swift.Encoder) throws
   public init(from decoder: any Swift.Decoder) throws
 }
@@ -524,7 +531,7 @@ extension RoveriOS.Rover {
   public func configure(licenseKey: Swift.String, environment: RoveriOS.Rover.Environment = .staging, deviceId: Swift.String = "unknown", maxConcurrentCollections: Swift.Int = 4, suppressVersionNotice: Swift.Bool = false, callback: @escaping ([RoveriOS.Merchant], Swift.String?) -> ())
   @available(iOS 13.0.0, *)
   public func configure(licenseKey: Swift.String, environment: RoveriOS.Rover.Environment = .staging, deviceId: Swift.String = "unknown", maxConcurrentCollections: Swift.Int = 4) async -> ([RoveriOS.Merchant], Swift.String?)
-  public func collect(userId: Swift.String? = nil, account: Swift.String? = nil, password: Swift.String? = nil, cookiesBase64: Swift.String? = nil, merchantId: Swift.Int?, javascript: Foundation.Data? = nil, javascriptUrl: Swift.String? = nil, javascriptVersion: Swift.Int? = nil, fromDate: Foundation.Date, toDate: Foundation.Date? = nil, serviceGroupRequests: [RoveriOS.ServiceGroupRequest]? = nil, tier1BatchSize: Swift.Int = 16, tier2BatchSize: Swift.Int = 16, tier3BatchSize: Swift.Int = 16, receiptsBatchSize: Swift.Int = 8, collectItemInfo: Swift.Bool? = false, collectSourceData: Swift.Bool? = false, isEphemeral: Swift.Bool = false, hasBackend: Swift.Bool = false, allowUserInteractionRequired: Swift.Bool = true, appInfo: Swift.String? = nil, featureFlags: [Swift.String]? = nil, overrideMimicDesktopIfPossible: Swift.Bool? = nil, overrideWebviewBlockImageLoading: Swift.Bool? = nil, delegate: RoveriOS.RoverDelegate)
+  public func collect(userId: Swift.String? = nil, account: Swift.String? = nil, password: Swift.String? = nil, cookiesBase64: Swift.String? = nil, merchantId: Swift.Int?, javascript: Foundation.Data? = nil, javascriptUrl: Swift.String? = nil, javascriptVersion: Swift.Int? = nil, fromDate: Foundation.Date, toDate: Foundation.Date? = nil, serviceGroupRequests: [RoveriOS.ServiceGroupRequest]? = nil, tier1BatchSize: Swift.Int = 16, tier2BatchSize: Swift.Int = 16, tier3BatchSize: Swift.Int = 16, receiptsBatchSize: Swift.Int = 8, collectItemInfo: Swift.Bool? = false, collectSourceData: Swift.Bool? = false, isEphemeral: Swift.Bool = false, isConnectionOnly: Swift.Bool = false, hasBackend: Swift.Bool = false, allowUserInteractionRequired: Swift.Bool = true, appInfo: Swift.String? = nil, featureFlags: [Swift.String]? = nil, overrideMimicDesktopIfPossible: Swift.Bool? = nil, overrideWebviewBlockImageLoading: Swift.Bool? = nil, delegate: RoveriOS.RoverDelegate)
   public func cancel(sessionUUID: Swift.String, callback: @escaping (Swift.String?) -> ())
   @available(iOS 13.0.0, *)
   public func cancel(sessionUUID: Swift.String) async -> Swift.String?
@@ -543,9 +550,10 @@ extension RoveriOS.Rover {
   public func remove(connection: RoveriOS.Connection, _ callback: @escaping () -> ())
   @available(iOS 13.0.0, *)
   public func remove(connection: RoveriOS.Connection) async
-  public func pull(authorization: Swift.String, requestsUrl: Swift.String, resultsUrl: Swift.String, statusUrl: Swift.String?, _ callback: @escaping (Swift.Int, Swift.String?) -> ())
+  public func edgePull(authorization: Swift.String?, requestsUrl: Swift.String, resultsUrl: Swift.String, receiptsUrl: Swift.String?, statusUrl: Swift.String?, debug: Swift.Bool, verboseErrors: Swift.Bool, permissiveResponses: Swift.Bool, routeAddress: Swift.String?, routePort: Swift.Int?, _ callback: @escaping (Swift.Int, Swift.String?) -> ())
   @available(iOS 13.0.0, *)
-  public func pull(authorization: Swift.String, requestsUrl: Swift.String, resultsUrl: Swift.String, statusUrl: Swift.String?) async -> (Swift.Int, Swift.String?)
+  public func edgePull(authorization: Swift.String?, requestsUrl: Swift.String, resultsUrl: Swift.String, receiptsUrl: Swift.String?, statusUrl: Swift.String?, debug: Swift.Bool, verboseErrors: Swift.Bool, permissiveResponses: Swift.Bool, routeAddress: Swift.String?, routePort: Swift.Int?) async -> (Swift.Int, Swift.String?)
+  public func edgePush(authorization: Swift.String?, listenAddress: Swift.String?, listenPort: Swift.Int?, resultsUrl: Swift.String, receiptsUrl: Swift.String?, statusUrl: Swift.String?, debug: Swift.Bool, permissiveResponses: Swift.Bool, verboseErrors: Swift.Bool, routeAddress: Swift.String?, routePort: Swift.Int?, _ callback: @escaping (Swift.Int, Swift.String?) -> ())
   @objc deinit
 }
 open class RoverDelegate {
