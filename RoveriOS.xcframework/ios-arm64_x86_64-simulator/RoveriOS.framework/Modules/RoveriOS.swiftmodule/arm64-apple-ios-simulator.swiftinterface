@@ -102,6 +102,7 @@ public enum MerchantId : Swift.Int, Swift.Codable, Swift.CaseIterable {
   case paramountplus
   case max
   case peacock
+  case youtube
   public init?(rawValue: Swift.Int)
   public typealias AllCases = [RoveriOS.MerchantId]
   public typealias RawValue = Swift.Int
