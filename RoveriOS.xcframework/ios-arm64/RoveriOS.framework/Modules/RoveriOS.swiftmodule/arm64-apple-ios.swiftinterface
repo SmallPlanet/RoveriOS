@@ -103,6 +103,7 @@ public enum MerchantId : Swift.Int, Swift.Codable, Swift.CaseIterable {
   case max
   case peacock
   case youtube
+  case instagram
   public init?(rawValue: Swift.Int)
   public typealias AllCases = [RoveriOS.MerchantId]
   public typealias RawValue = Swift.Int
@@ -562,7 +563,7 @@ open class RoverDelegate {
   open func roverDidInit(sessionUUID: Swift.String, scrapeRequest: RoveriOS.ScrapeRequest, callback: @escaping (_ scrapeRequest: RoveriOS.ScrapeRequest, _ error: Swift.String?) -> ())
   open func roverDidCollect(sessionUUID: Swift.String, receipts: [RoveriOS.Receipt])
   open func roverHasStatus(sessionUUID: Swift.String, progress: Swift.Double, stepProgress: Swift.Double, currentStep: Swift.Int, maxSteps: Swift.Int, serviceGroupStatus: [RoveriOS.ScrapeServiceGroupStatus], merchantVersion: Swift.String?, tagLog: [Swift.String], userTag: Swift.String)
-  open func roverAccountDidLogin(sessionUUID: Swift.String, oldAccount: Swift.String, newAccount: Swift.String, password: Swift.String, cookiesBase64: Swift.String?, callback: @escaping (_ error: Swift.String?, _ appInfo: Swift.String?) -> ())
+  open func roverAccountDidLogin(sessionUUID: Swift.String, oldAccount: Swift.String, newAccount: Swift.String, password: Swift.String, cookiesBase64: Swift.String?, wasUserInteractionRequired: Swift.Bool, callback: @escaping (_ error: Swift.String?, _ appInfo: Swift.String?) -> ())
   open func roverRequestDownload(url: Swift.String, callback: @escaping (_ error: Swift.String?, _ data: Foundation.Data?) -> ())
   open func roverPullT1(sessionUUID: Swift.String, serviceGroup: Swift.String, callback: @escaping (_ error: Swift.String?, _ appInfo: Swift.String?) -> ())
   open func roverPushT1(sessionUUID: Swift.String, serviceGroup: Swift.String, orders: [Swift.String], callback: @escaping (_ error: Swift.String?, _ appInfo: Swift.String?) -> ())
