@@ -95,6 +95,7 @@ public enum MerchantId : Swift.Int, Swift.Codable, Swift.CaseIterable {
   case meritain
   case eyemed
   case wolfe0
+  case tiktokproduct
   case chatgpt
   case netflix
   case hulu
@@ -105,6 +106,8 @@ public enum MerchantId : Swift.Int, Swift.Codable, Swift.CaseIterable {
   case peacock
   case youtube
   case instagram
+  case tiktok
+  case applePodcasts
   public init?(rawValue: Swift.Int)
   public typealias AllCases = [RoveriOS.MerchantId]
   public typealias RawValue = Swift.Int
@@ -504,6 +507,9 @@ public struct ReceiptAIConversation : Swift.Codable {
   public var title: Swift.String?
   public var createdDate: Swift.String?
   public var updatedDate: Swift.String?
+  public var groupId: Swift.String?
+  public var groupType: Swift.String?
+  public var groupTitle: Swift.String?
   public var messages: [RoveriOS.ReceiptAIConversationMessage]?
   public func encode(to encoder: any Swift.Encoder) throws
   public init(from decoder: any Swift.Decoder) throws
