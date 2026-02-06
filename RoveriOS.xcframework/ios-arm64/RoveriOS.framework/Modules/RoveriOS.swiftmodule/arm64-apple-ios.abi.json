@@ -2413,6 +2413,43 @@
           },
           {
             "kind": "Var",
+            "name": "tiktokshop",
+            "printedName": "tiktokshop",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(RoveriOS.MerchantId.Type) -> RoveriOS.MerchantId",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "MerchantId",
+                    "printedName": "RoveriOS.MerchantId",
+                    "usr": "s:8RoveriOS10MerchantIdO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "RoveriOS.MerchantId.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "MerchantId",
+                        "printedName": "RoveriOS.MerchantId",
+                        "usr": "s:8RoveriOS10MerchantIdO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:8RoveriOS10MerchantIdO10tiktokshopyA2CmF",
+            "mangledName": "$s8RoveriOS10MerchantIdO10tiktokshopyA2CmF",
+            "moduleName": "RoveriOS"
+          },
+          {
+            "kind": "Var",
             "name": "costco",
             "printedName": "costco",
             "children": [
@@ -2490,6 +2527,46 @@
           },
           {
             "kind": "Var",
+            "name": "chewyProduct",
+            "printedName": "chewyProduct",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(RoveriOS.MerchantId.Type) -> RoveriOS.MerchantId",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "MerchantId",
+                    "printedName": "RoveriOS.MerchantId",
+                    "usr": "s:8RoveriOS10MerchantIdO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "RoveriOS.MerchantId.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "MerchantId",
+                        "printedName": "RoveriOS.MerchantId",
+                        "usr": "s:8RoveriOS10MerchantIdO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:8RoveriOS10MerchantIdO12chewyProductyA2CmF",
+            "mangledName": "$s8RoveriOS10MerchantIdO12chewyProductyA2CmF",
+            "moduleName": "RoveriOS",
+            "declAttributes": [
+              "RawDocComment"
+            ]
+          },
+          {
+            "kind": "Var",
             "name": "unitedHealthcare",
             "printedName": "unitedHealthcare",
             "children": [
@@ -2523,10 +2600,7 @@
             "declKind": "EnumElement",
             "usr": "s:8RoveriOS10MerchantIdO16unitedHealthcareyA2CmF",
             "mangledName": "$s8RoveriOS10MerchantIdO16unitedHealthcareyA2CmF",
-            "moduleName": "RoveriOS",
-            "declAttributes": [
-              "RawDocComment"
-            ]
+            "moduleName": "RoveriOS"
           },
           {
             "kind": "Var",
@@ -39032,6 +39106,92 @@
           },
           {
             "kind": "Var",
+            "name": "debugFileDescriptor",
+            "printedName": "debugFileDescriptor",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:8RoveriOS5RoverC19debugFileDescriptorSivp",
+            "mangledName": "$s8RoveriOS5RoverC19debugFileDescriptorSivp",
+            "moduleName": "RoveriOS",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8RoveriOS5RoverC19debugFileDescriptorSivg",
+                "mangledName": "$s8RoveriOS5RoverC19debugFileDescriptorSivg",
+                "moduleName": "RoveriOS",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8RoveriOS5RoverC19debugFileDescriptorSivs",
+                "mangledName": "$s8RoveriOS5RoverC19debugFileDescriptorSivs",
+                "moduleName": "RoveriOS",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8RoveriOS5RoverC19debugFileDescriptorSivM",
+                "mangledName": "$s8RoveriOS5RoverC19debugFileDescriptorSivM",
+                "moduleName": "RoveriOS",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
             "name": "featureFlags",
             "printedName": "featureFlags",
             "children": [
@@ -41538,6 +41698,54 @@
           },
           {
             "kind": "Function",
+            "name": "roverAnalyticsEvent",
+            "printedName": "roverAnalyticsEvent(name:parameters:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Dictionary",
+                "printedName": "[Swift.String : Swift.String]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:SD"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:8RoveriOS13RoverDelegateC19roverAnalyticsEvent4name10parametersySS_SDyS2SGtF",
+            "mangledName": "$s8RoveriOS13RoverDelegateC19roverAnalyticsEvent4name10parametersySS_SDyS2SGtF",
+            "moduleName": "RoveriOS",
+            "isOpen": true,
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
             "name": "roverHasStatus",
             "printedName": "roverHasStatus(sessionUUID:progress:stepProgress:currentStep:maxSteps:serviceGroupStatus:merchantVersion:tagLog:userTag:)",
             "children": [
@@ -42890,427 +43098,441 @@
     {
       "filePath": "\/Users\/rjbowli\/Development\/smallplanet\/smallplanet_RoveriOS_SDK\/RoveriOS\/CopyFromCore\/Run+Receipt.swift",
       "kind": "IntegerLiteral",
-      "offset": 4993,
+      "offset": 4954,
+      "length": 3,
+      "value": "506"
+    },
+    {
+      "filePath": "\/Users\/rjbowli\/Development\/smallplanet\/smallplanet_RoveriOS_SDK\/RoveriOS\/CopyFromCore\/Run+Receipt.swift",
+      "kind": "IntegerLiteral",
+      "offset": 5019,
       "length": 4,
       "value": "2499"
     },
     {
       "filePath": "\/Users\/rjbowli\/Development\/smallplanet\/smallplanet_RoveriOS_SDK\/RoveriOS\/CopyFromCore\/Run+Receipt.swift",
       "kind": "IntegerLiteral",
-      "offset": 5016,
+      "offset": 5042,
       "length": 3,
       "value": "105"
     },
     {
       "filePath": "\/Users\/rjbowli\/Development\/smallplanet\/smallplanet_RoveriOS_SDK\/RoveriOS\/CopyFromCore\/Run+Receipt.swift",
       "kind": "IntegerLiteral",
-      "offset": 5082,
+      "offset": 5104,
+      "length": 4,
+      "value": "1500"
+    },
+    {
+      "filePath": "\/Users\/rjbowli\/Development\/smallplanet\/smallplanet_RoveriOS_SDK\/RoveriOS\/CopyFromCore\/Run+Receipt.swift",
+      "kind": "IntegerLiteral",
+      "offset": 5142,
       "length": 5,
       "value": "50000"
     },
     {
       "filePath": "\/Users\/rjbowli\/Development\/smallplanet\/smallplanet_RoveriOS_SDK\/RoveriOS\/CopyFromCore\/Run+Receipt.swift",
       "kind": "IntegerLiteral",
-      "offset": 5105,
+      "offset": 5165,
       "length": 5,
       "value": "50001"
     },
     {
       "filePath": "\/Users\/rjbowli\/Development\/smallplanet\/smallplanet_RoveriOS_SDK\/RoveriOS\/CopyFromCore\/Run+Receipt.swift",
       "kind": "IntegerLiteral",
-      "offset": 5128,
+      "offset": 5188,
       "length": 5,
       "value": "50002"
     },
     {
       "filePath": "\/Users\/rjbowli\/Development\/smallplanet\/smallplanet_RoveriOS_SDK\/RoveriOS\/CopyFromCore\/Run+Receipt.swift",
       "kind": "IntegerLiteral",
-      "offset": 5152,
+      "offset": 5212,
       "length": 5,
       "value": "50003"
     },
     {
       "filePath": "\/Users\/rjbowli\/Development\/smallplanet\/smallplanet_RoveriOS_SDK\/RoveriOS\/CopyFromCore\/Run+Receipt.swift",
       "kind": "IntegerLiteral",
-      "offset": 5173,
+      "offset": 5233,
       "length": 5,
       "value": "50004"
     },
     {
       "filePath": "\/Users\/rjbowli\/Development\/smallplanet\/smallplanet_RoveriOS_SDK\/RoveriOS\/CopyFromCore\/Run+Receipt.swift",
       "kind": "IntegerLiteral",
-      "offset": 5203,
+      "offset": 5263,
       "length": 5,
       "value": "50005"
     },
     {
       "filePath": "\/Users\/rjbowli\/Development\/smallplanet\/smallplanet_RoveriOS_SDK\/RoveriOS\/CopyFromCore\/Run+Receipt.swift",
       "kind": "IntegerLiteral",
-      "offset": 5229,
+      "offset": 5289,
       "length": 5,
       "value": "50006"
     },
     {
       "filePath": "\/Users\/rjbowli\/Development\/smallplanet\/smallplanet_RoveriOS_SDK\/RoveriOS\/CopyFromCore\/Run+Receipt.swift",
       "kind": "IntegerLiteral",
-      "offset": 5258,
+      "offset": 5318,
       "length": 5,
       "value": "50010"
     },
     {
       "filePath": "\/Users\/rjbowli\/Development\/smallplanet\/smallplanet_RoveriOS_SDK\/RoveriOS\/CopyFromCore\/Run+Receipt.swift",
       "kind": "IntegerLiteral",
-      "offset": 5282,
+      "offset": 5342,
       "length": 5,
       "value": "50011"
     },
     {
       "filePath": "\/Users\/rjbowli\/Development\/smallplanet\/smallplanet_RoveriOS_SDK\/RoveriOS\/CopyFromCore\/Run+Receipt.swift",
       "kind": "IntegerLiteral",
-      "offset": 5306,
+      "offset": 5366,
       "length": 5,
       "value": "50012"
     },
     {
       "filePath": "\/Users\/rjbowli\/Development\/smallplanet\/smallplanet_RoveriOS_SDK\/RoveriOS\/CopyFromCore\/Run+Receipt.swift",
       "kind": "IntegerLiteral",
-      "offset": 5330,
+      "offset": 5390,
       "length": 5,
       "value": "50013"
     },
     {
       "filePath": "\/Users\/rjbowli\/Development\/smallplanet\/smallplanet_RoveriOS_SDK\/RoveriOS\/CopyFromCore\/Run+Receipt.swift",
       "kind": "IntegerLiteral",
-      "offset": 5359,
+      "offset": 5419,
       "length": 5,
       "value": "50014"
     },
     {
       "filePath": "\/Users\/rjbowli\/Development\/smallplanet\/smallplanet_RoveriOS_SDK\/RoveriOS\/CopyFromCore\/Run+Receipt.swift",
       "kind": "IntegerLiteral",
-      "offset": 5383,
+      "offset": 5443,
       "length": 5,
       "value": "50015"
     },
     {
       "filePath": "\/Users\/rjbowli\/Development\/smallplanet\/smallplanet_RoveriOS_SDK\/RoveriOS\/CopyFromCore\/Run+Receipt.swift",
       "kind": "IntegerLiteral",
-      "offset": 5417,
+      "offset": 5477,
       "length": 5,
       "value": "50020"
     },
     {
       "filePath": "\/Users\/rjbowli\/Development\/smallplanet\/smallplanet_RoveriOS_SDK\/RoveriOS\/CopyFromCore\/Run+Receipt.swift",
       "kind": "IntegerLiteral",
-      "offset": 5449,
+      "offset": 5509,
       "length": 5,
       "value": "50021"
     },
     {
       "filePath": "\/Users\/rjbowli\/Development\/smallplanet\/smallplanet_RoveriOS_SDK\/RoveriOS\/CopyFromCore\/Run+Receipt.swift",
       "kind": "IntegerLiteral",
-      "offset": 5479,
+      "offset": 5539,
       "length": 5,
       "value": "50030"
     },
     {
       "filePath": "\/Users\/rjbowli\/Development\/smallplanet\/smallplanet_RoveriOS_SDK\/RoveriOS\/CopyFromCore\/Run+Receipt.swift",
       "kind": "IntegerLiteral",
-      "offset": 5500,
+      "offset": 5560,
       "length": 5,
       "value": "50031"
     },
     {
       "filePath": "\/Users\/rjbowli\/Development\/smallplanet\/smallplanet_RoveriOS_SDK\/RoveriOS\/CopyFromCore\/Run+Receipt.swift",
       "kind": "IntegerLiteral",
-      "offset": 5532,
+      "offset": 5592,
       "length": 5,
       "value": "50032"
     },
     {
       "filePath": "\/Users\/rjbowli\/Development\/smallplanet\/smallplanet_RoveriOS_SDK\/RoveriOS\/CopyFromCore\/Run+Receipt.swift",
       "kind": "IntegerLiteral",
-      "offset": 5561,
+      "offset": 5621,
       "length": 5,
       "value": "50033"
     },
     {
       "filePath": "\/Users\/rjbowli\/Development\/smallplanet\/smallplanet_RoveriOS_SDK\/RoveriOS\/CopyFromCore\/Run+Receipt.swift",
       "kind": "IntegerLiteral",
-      "offset": 5585,
+      "offset": 5645,
       "length": 5,
       "value": "50034"
     },
     {
       "filePath": "\/Users\/rjbowli\/Development\/smallplanet\/smallplanet_RoveriOS_SDK\/RoveriOS\/CopyFromCore\/Run+Receipt.swift",
       "kind": "IntegerLiteral",
-      "offset": 5610,
+      "offset": 5670,
       "length": 5,
       "value": "50035"
     },
     {
       "filePath": "\/Users\/rjbowli\/Development\/smallplanet\/smallplanet_RoveriOS_SDK\/RoveriOS\/CopyFromCore\/Run+Receipt.swift",
       "kind": "IntegerLiteral",
-      "offset": 5636,
+      "offset": 5696,
       "length": 5,
       "value": "50036"
     },
     {
       "filePath": "\/Users\/rjbowli\/Development\/smallplanet\/smallplanet_RoveriOS_SDK\/RoveriOS\/CopyFromCore\/Run+Receipt.swift",
       "kind": "IntegerLiteral",
-      "offset": 5665,
+      "offset": 5725,
       "length": 5,
       "value": "50050"
     },
     {
       "filePath": "\/Users\/rjbowli\/Development\/smallplanet\/smallplanet_RoveriOS_SDK\/RoveriOS\/CopyFromCore\/Run+Receipt.swift",
       "kind": "IntegerLiteral",
-      "offset": 5694,
+      "offset": 5754,
       "length": 5,
       "value": "60000"
     },
     {
       "filePath": "\/Users\/rjbowli\/Development\/smallplanet\/smallplanet_RoveriOS_SDK\/RoveriOS\/CopyFromCore\/Run+Receipt.swift",
       "kind": "IntegerLiteral",
-      "offset": 5725,
+      "offset": 5785,
       "length": 5,
       "value": "60001"
     },
     {
       "filePath": "\/Users\/rjbowli\/Development\/smallplanet\/smallplanet_RoveriOS_SDK\/RoveriOS\/CopyFromCore\/Run+Receipt.swift",
       "kind": "IntegerLiteral",
-      "offset": 5755,
+      "offset": 5815,
       "length": 6,
       "value": "120000"
     },
     {
       "filePath": "\/Users\/rjbowli\/Development\/smallplanet\/smallplanet_RoveriOS_SDK\/RoveriOS\/CopyFromCore\/Run+Receipt.swift",
       "kind": "IntegerLiteral",
-      "offset": 5786,
+      "offset": 5846,
       "length": 6,
       "value": "220000"
     },
     {
       "filePath": "\/Users\/rjbowli\/Development\/smallplanet\/smallplanet_RoveriOS_SDK\/RoveriOS\/CopyFromCore\/Run+Receipt.swift",
       "kind": "IntegerLiteral",
-      "offset": 5809,
+      "offset": 5869,
       "length": 6,
       "value": "220001"
     },
     {
       "filePath": "\/Users\/rjbowli\/Development\/smallplanet\/smallplanet_RoveriOS_SDK\/RoveriOS\/CopyFromCore\/Run+Receipt.swift",
       "kind": "IntegerLiteral",
-      "offset": 5838,
+      "offset": 5898,
       "length": 6,
       "value": "220002"
     },
     {
       "filePath": "\/Users\/rjbowli\/Development\/smallplanet\/smallplanet_RoveriOS_SDK\/RoveriOS\/CopyFromCore\/Run+Receipt.swift",
       "kind": "IntegerLiteral",
-      "offset": 5867,
+      "offset": 5927,
       "length": 6,
       "value": "220003"
     },
     {
       "filePath": "\/Users\/rjbowli\/Development\/smallplanet\/smallplanet_RoveriOS_SDK\/RoveriOS\/CopyFromCore\/Run+Receipt.swift",
       "kind": "IntegerLiteral",
-      "offset": 5899,
+      "offset": 5959,
       "length": 6,
       "value": "220004"
     },
     {
       "filePath": "\/Users\/rjbowli\/Development\/smallplanet\/smallplanet_RoveriOS_SDK\/RoveriOS\/CopyFromCore\/Run+Receipt.swift",
       "kind": "IntegerLiteral",
-      "offset": 5921,
+      "offset": 5981,
       "length": 6,
       "value": "220005"
     },
     {
       "filePath": "\/Users\/rjbowli\/Development\/smallplanet\/smallplanet_RoveriOS_SDK\/RoveriOS\/CopyFromCore\/Run+Receipt.swift",
       "kind": "IntegerLiteral",
-      "offset": 5947,
+      "offset": 6007,
       "length": 6,
       "value": "220006"
     },
     {
       "filePath": "\/Users\/rjbowli\/Development\/smallplanet\/smallplanet_RoveriOS_SDK\/RoveriOS\/CopyFromCore\/Run+Receipt.swift",
       "kind": "IntegerLiteral",
-      "offset": 5973,
+      "offset": 6033,
       "length": 6,
       "value": "220007"
     },
     {
       "filePath": "\/Users\/rjbowli\/Development\/smallplanet\/smallplanet_RoveriOS_SDK\/RoveriOS\/CopyFromCore\/Run+Receipt.swift",
       "kind": "IntegerLiteral",
-      "offset": 6006,
+      "offset": 6066,
       "length": 6,
       "value": "230000"
     },
     {
       "filePath": "\/Users\/rjbowli\/Development\/smallplanet\/smallplanet_RoveriOS_SDK\/RoveriOS\/CopyFromCore\/Run+Receipt.swift",
       "kind": "IntegerLiteral",
-      "offset": 6031,
+      "offset": 6091,
       "length": 6,
       "value": "230001"
     },
     {
       "filePath": "\/Users\/rjbowli\/Development\/smallplanet\/smallplanet_RoveriOS_SDK\/RoveriOS\/CopyFromCore\/Run+Receipt.swift",
       "kind": "IntegerLiteral",
-      "offset": 6068,
+      "offset": 6128,
       "length": 6,
       "value": "240000"
     },
     {
       "filePath": "\/Users\/rjbowli\/Development\/smallplanet\/smallplanet_RoveriOS_SDK\/RoveriOS\/CopyFromCore\/Run+Receipt.swift",
       "kind": "IntegerLiteral",
-      "offset": 6219,
+      "offset": 6279,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/rjbowli\/Development\/smallplanet\/smallplanet_RoveriOS_SDK\/RoveriOS\/CopyFromCore\/Run+Receipt.swift",
       "kind": "IntegerLiteral",
-      "offset": 6256,
+      "offset": 6316,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/rjbowli\/Development\/smallplanet\/smallplanet_RoveriOS_SDK\/RoveriOS\/CopyFromCore\/Run+Receipt.swift",
       "kind": "IntegerLiteral",
-      "offset": 6293,
+      "offset": 6353,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/rjbowli\/Development\/smallplanet\/smallplanet_RoveriOS_SDK\/RoveriOS\/CopyFromCore\/Run+Receipt.swift",
       "kind": "IntegerLiteral",
-      "offset": 6334,
+      "offset": 6394,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/rjbowli\/Development\/smallplanet\/smallplanet_RoveriOS_SDK\/RoveriOS\/CopyFromCore\/Run+Receipt.swift",
       "kind": "IntegerLiteral",
-      "offset": 6371,
+      "offset": 6431,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/rjbowli\/Development\/smallplanet\/smallplanet_RoveriOS_SDK\/RoveriOS\/CopyFromCore\/Run+Receipt.swift",
       "kind": "IntegerLiteral",
-      "offset": 6408,
+      "offset": 6468,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/rjbowli\/Development\/smallplanet\/smallplanet_RoveriOS_SDK\/RoveriOS\/CopyFromCore\/Run+Receipt.swift",
       "kind": "IntegerLiteral",
-      "offset": 6449,
+      "offset": 6509,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/rjbowli\/Development\/smallplanet\/smallplanet_RoveriOS_SDK\/RoveriOS\/CopyFromCore\/Run+Receipt.swift",
       "kind": "IntegerLiteral",
-      "offset": 6486,
+      "offset": 6546,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/rjbowli\/Development\/smallplanet\/smallplanet_RoveriOS_SDK\/RoveriOS\/CopyFromCore\/Run+Receipt.swift",
       "kind": "IntegerLiteral",
-      "offset": 6523,
+      "offset": 6583,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/rjbowli\/Development\/smallplanet\/smallplanet_RoveriOS_SDK\/RoveriOS\/CopyFromCore\/Run+Receipt.swift",
       "kind": "BooleanLiteral",
-      "offset": 6669,
+      "offset": 6729,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/rjbowli\/Development\/smallplanet\/smallplanet_RoveriOS_SDK\/RoveriOS\/CopyFromCore\/Run+Receipt.swift",
       "kind": "IntegerLiteral",
-      "offset": 6849,
+      "offset": 6909,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/rjbowli\/Development\/smallplanet\/smallplanet_RoveriOS_SDK\/RoveriOS\/CopyFromCore\/Run+Receipt.swift",
       "kind": "FloatLiteral",
-      "offset": 7155,
+      "offset": 7215,
       "length": 3,
       "value": "0.0"
     },
     {
       "filePath": "\/Users\/rjbowli\/Development\/smallplanet\/smallplanet_RoveriOS_SDK\/RoveriOS\/CopyFromCore\/Run+Receipt.swift",
       "kind": "IntegerLiteral",
-      "offset": 7193,
+      "offset": 7253,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/rjbowli\/Development\/smallplanet\/smallplanet_RoveriOS_SDK\/RoveriOS\/CopyFromCore\/Run+Receipt.swift",
       "kind": "IntegerLiteral",
-      "offset": 7226,
+      "offset": 7286,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/rjbowli\/Development\/smallplanet\/smallplanet_RoveriOS_SDK\/RoveriOS\/CopyFromCore\/Run+Receipt.swift",
       "kind": "BooleanLiteral",
-      "offset": 7428,
+      "offset": 7488,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/rjbowli\/Development\/smallplanet\/smallplanet_RoveriOS_SDK\/RoveriOS\/CopyFromCore\/Run+Receipt.swift",
       "kind": "IntegerLiteral",
-      "offset": 7630,
+      "offset": 7690,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/rjbowli\/Development\/smallplanet\/smallplanet_RoveriOS_SDK\/RoveriOS\/CopyFromCore\/Run+Receipt.swift",
       "kind": "IntegerLiteral",
-      "offset": 7670,
+      "offset": 7730,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/rjbowli\/Development\/smallplanet\/smallplanet_RoveriOS_SDK\/RoveriOS\/CopyFromCore\/Run+Receipt.swift",
       "kind": "IntegerLiteral",
-      "offset": 7708,
+      "offset": 7768,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/rjbowli\/Development\/smallplanet\/smallplanet_RoveriOS_SDK\/RoveriOS\/CopyFromCore\/Run+Receipt.swift",
       "kind": "IntegerLiteral",
-      "offset": 7747,
+      "offset": 7807,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/rjbowli\/Development\/smallplanet\/smallplanet_RoveriOS_SDK\/RoveriOS\/CopyFromCore\/Run+Receipt.swift",
       "kind": "FloatLiteral",
-      "offset": 7801,
+      "offset": 7861,
       "length": 3,
       "value": "0.0"
     },
     {
       "filePath": "\/Users\/rjbowli\/Development\/smallplanet\/smallplanet_RoveriOS_SDK\/RoveriOS\/CopyFromCore\/Run+Receipt.swift",
       "kind": "FloatLiteral",
-      "offset": 7852,
+      "offset": 7912,
       "length": 3,
       "value": "0.0"
     },
     {
       "filePath": "\/Users\/rjbowli\/Development\/smallplanet\/smallplanet_RoveriOS_SDK\/RoveriOS\/CopyFromCore\/Run+Receipt.swift",
       "kind": "BooleanLiteral",
-      "offset": 11775,
+      "offset": 11835,
       "length": 4,
       "value": "true"
     },
@@ -43338,119 +43560,126 @@
     {
       "filePath": "\/Users\/rjbowli\/Development\/smallplanet\/smallplanet_RoveriOS_SDK\/RoveriOS\/Rover.swift",
       "kind": "Array",
-      "offset": 814,
+      "offset": 813,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/rjbowli\/Development\/smallplanet\/smallplanet_RoveriOS_SDK\/RoveriOS\/Rover.swift",
+      "kind": "IntegerLiteral",
+      "offset": 863,
+      "length": 2,
+      "value": "-1"
+    },
+    {
+      "filePath": "\/Users\/rjbowli\/Development\/smallplanet\/smallplanet_RoveriOS_SDK\/RoveriOS\/Rover.swift",
       "kind": "StringLiteral",
-      "offset": 1181,
+      "offset": 1230,
       "length": 9,
       "value": "\"unknown\""
     },
     {
       "filePath": "\/Users\/rjbowli\/Development\/smallplanet\/smallplanet_RoveriOS_SDK\/RoveriOS\/Rover.swift",
       "kind": "StringLiteral",
-      "offset": 3647,
+      "offset": 3696,
       "length": 9,
       "value": "\"unknown\""
     },
     {
       "filePath": "\/Users\/rjbowli\/Development\/smallplanet\/smallplanet_RoveriOS_SDK\/RoveriOS\/Rover.swift",
       "kind": "IntegerLiteral",
-      "offset": 3716,
+      "offset": 3765,
       "length": 1,
       "value": "4"
     },
     {
       "filePath": "\/Users\/rjbowli\/Development\/smallplanet\/smallplanet_RoveriOS_SDK\/RoveriOS\/Rover.swift",
       "kind": "BooleanLiteral",
-      "offset": 3775,
+      "offset": 3824,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/rjbowli\/Development\/smallplanet\/smallplanet_RoveriOS_SDK\/RoveriOS\/Rover.swift",
       "kind": "StringLiteral",
-      "offset": 9389,
+      "offset": 9649,
       "length": 9,
       "value": "\"unknown\""
     },
     {
       "filePath": "\/Users\/rjbowli\/Development\/smallplanet\/smallplanet_RoveriOS_SDK\/RoveriOS\/Rover.swift",
       "kind": "IntegerLiteral",
-      "offset": 9458,
+      "offset": 9718,
       "length": 1,
       "value": "4"
     },
     {
       "filePath": "\/Users\/rjbowli\/Development\/smallplanet\/smallplanet_RoveriOS_SDK\/RoveriOS\/Rover.swift",
       "kind": "IntegerLiteral",
-      "offset": 14435,
+      "offset": 14695,
       "length": 2,
       "value": "16"
     },
     {
       "filePath": "\/Users\/rjbowli\/Development\/smallplanet\/smallplanet_RoveriOS_SDK\/RoveriOS\/Rover.swift",
       "kind": "IntegerLiteral",
-      "offset": 14485,
+      "offset": 14745,
       "length": 2,
       "value": "16"
     },
     {
       "filePath": "\/Users\/rjbowli\/Development\/smallplanet\/smallplanet_RoveriOS_SDK\/RoveriOS\/Rover.swift",
       "kind": "IntegerLiteral",
-      "offset": 14535,
+      "offset": 14795,
       "length": 2,
       "value": "16"
     },
     {
       "filePath": "\/Users\/rjbowli\/Development\/smallplanet\/smallplanet_RoveriOS_SDK\/RoveriOS\/Rover.swift",
       "kind": "IntegerLiteral",
-      "offset": 14588,
+      "offset": 14848,
       "length": 1,
       "value": "8"
     },
     {
       "filePath": "\/Users\/rjbowli\/Development\/smallplanet\/smallplanet_RoveriOS_SDK\/RoveriOS\/Rover.swift",
       "kind": "BooleanLiteral",
-      "offset": 14640,
+      "offset": 14900,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/rjbowli\/Development\/smallplanet\/smallplanet_RoveriOS_SDK\/RoveriOS\/Rover.swift",
       "kind": "BooleanLiteral",
-      "offset": 14698,
+      "offset": 14958,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/rjbowli\/Development\/smallplanet\/smallplanet_RoveriOS_SDK\/RoveriOS\/Rover.swift",
       "kind": "BooleanLiteral",
-      "offset": 14749,
+      "offset": 15009,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/rjbowli\/Development\/smallplanet\/smallplanet_RoveriOS_SDK\/RoveriOS\/Rover.swift",
       "kind": "BooleanLiteral",
-      "offset": 14805,
+      "offset": 15065,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/rjbowli\/Development\/smallplanet\/smallplanet_RoveriOS_SDK\/RoveriOS\/Rover.swift",
       "kind": "BooleanLiteral",
-      "offset": 14855,
+      "offset": 15115,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/rjbowli\/Development\/smallplanet\/smallplanet_RoveriOS_SDK\/RoveriOS\/Rover.swift",
       "kind": "BooleanLiteral",
-      "offset": 14923,
+      "offset": 15183,
       "length": 4,
       "value": "true"
     },
@@ -43613,7 +43842,7 @@
       "kind": "StringLiteral",
       "offset": 102,
       "length": 9,
-      "value": "\"v0.4.35\""
+      "value": "\"v0.4.36\""
     }
   ]
 }

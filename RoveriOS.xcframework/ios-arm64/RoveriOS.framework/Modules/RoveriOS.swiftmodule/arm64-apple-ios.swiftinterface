@@ -68,8 +68,10 @@ public enum MerchantId : Swift.Int, Swift.Codable, Swift.CaseIterable {
   case thrivemarket
   case doordash
   case ubereats
+  case tiktokshop
   case costco
   case target
+  case chewyProduct
   case unitedHealthcare
   case aetna
   case cigna
@@ -526,6 +528,7 @@ extension RoveriOS.Rover {
 }
 @objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers public class Rover : ObjectiveC.NSObject {
   public static let shared: RoveriOS.Rover
+  public var debugFileDescriptor: Swift.Int
   public var featureFlags: [Swift.String] {
     get
   }
@@ -568,6 +571,7 @@ open class RoverDelegate {
   public init()
   open func roverDidInit(sessionUUID: Swift.String, scrapeRequest: RoveriOS.ScrapeRequest, callback: @escaping (_ scrapeRequest: RoveriOS.ScrapeRequest, _ error: Swift.String?) -> ())
   open func roverDidCollect(sessionUUID: Swift.String, receipts: [RoveriOS.Receipt])
+  open func roverAnalyticsEvent(name: Swift.String, parameters: [Swift.String : Swift.String])
   open func roverHasStatus(sessionUUID: Swift.String, progress: Swift.Double, stepProgress: Swift.Double, currentStep: Swift.Int, maxSteps: Swift.Int, serviceGroupStatus: [RoveriOS.ScrapeServiceGroupStatus], merchantVersion: Swift.String?, tagLog: [Swift.String], userTag: Swift.String)
   open func roverAccountDidLogin(sessionUUID: Swift.String, oldAccount: Swift.String, newAccount: Swift.String, password: Swift.String, cookiesBase64: Swift.String?, wasUserInteractionRequired: Swift.Bool, callback: @escaping (_ error: Swift.String?, _ appInfo: Swift.String?) -> ())
   open func roverRequestDownload(url: Swift.String, callback: @escaping (_ error: Swift.String?, _ data: Foundation.Data?) -> ())
