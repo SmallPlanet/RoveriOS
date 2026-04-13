@@ -6,6 +6,7 @@ import BackgroundTasks
 import Foundation
 import Swift
 import UIKit
+import WebKit
 import _Concurrency
 import _StringProcessing
 import _SwiftConcurrencyShims
@@ -52,6 +53,7 @@ public enum InternalMerchantId : Swift.Int, Swift.Codable, Swift.CaseIterable {
 }
 public enum MerchantId : Swift.Int, Swift.Codable, Swift.CaseIterable {
   case tutorial
+  case intelligence
   case gmail
   case yahoo
   case aol
@@ -96,7 +98,7 @@ public enum MerchantId : Swift.Int, Swift.Codable, Swift.CaseIterable {
   case meritain
   case eyemed
   case wolfe0
-  case tiktokproduct
+  case tiktokProduct
   case chatgpt
   case netflix
   case hulu
@@ -178,8 +180,8 @@ public struct ServiceGroupRequest : Swift.Codable {
   public init(from decoder: any Swift.Decoder) throws
 }
 public struct RoverServerEdgeConfig : Swift.Codable {
-  public init(authorization: Swift.String?, listenAddress: Swift.String?, listenPort: Swift.Int?, resultsUrl: Swift.String, receiptsUrl: Swift.String?, statusUrl: Swift.String?, debug: Swift.Bool, verboseErrors: Swift.Bool, permissiveResponses: Swift.Bool, routeAddress: Swift.String?, routePort: Swift.Int?)
-  public init(authorization: Swift.String?, requestsUrl: Swift.String, resultsUrl: Swift.String, receiptsUrl: Swift.String?, statusUrl: Swift.String?, debug: Swift.Bool, verboseErrors: Swift.Bool, permissiveResponses: Swift.Bool, routeAddress: Swift.String?, routePort: Swift.Int?)
+  public init(authorization: Swift.String?, listenAddress: Swift.String?, listenPort: Swift.Int?, resultsUrl: Swift.String, receiptsUrl: Swift.String?, statusUrl: Swift.String?, debug: Swift.Bool, verboseErrors: Swift.Bool, permissiveResponses: Swift.Bool, intelligenceModelFlag: Swift.String?, userAgentTags: [Swift.String], routeAddress: Swift.String?, routePort: Swift.Int?)
+  public init(authorization: Swift.String?, requestsUrl: Swift.String, resultsUrl: Swift.String, receiptsUrl: Swift.String?, statusUrl: Swift.String?, debug: Swift.Bool, verboseErrors: Swift.Bool, permissiveResponses: Swift.Bool, intelligenceModelFlag: Swift.String?, userAgentTags: [Swift.String], routeAddress: Swift.String?, routePort: Swift.Int?)
   public func encode(to encoder: any Swift.Encoder) throws
   public init(from decoder: any Swift.Decoder) throws
 }
@@ -401,6 +403,7 @@ public struct Receipt : Swift.Codable {
   public var travelBuses: [RoveriOS.ReceiptBus]?
   public var streamingVideo: RoveriOS.ReceiptStreamingVideo?
   public var aiConversation: RoveriOS.ReceiptAIConversation?
+  public var advertisement: RoveriOS.ReceiptAdvertisement?
   public func encode(to encoder: any Swift.Encoder) throws
   public init(from decoder: any Swift.Decoder) throws
 }
@@ -441,6 +444,10 @@ public struct ReceiptStreamingVideo : Swift.Codable {
   public var viewDate: Swift.String?
   public var estimatedViewDate: Swift.String?
   public var videoType: Swift.String?
+  public var channelTitle: Swift.String?
+  public var channelUrl: Swift.String?
+  public var originatingDevice: Swift.String?
+  public var estimatedOriginatingDevice: Swift.String?
   public func encode(to encoder: any Swift.Encoder) throws
   public init(from decoder: any Swift.Decoder) throws
 }
@@ -515,6 +522,25 @@ public struct ReceiptAIConversation : Swift.Codable {
   public func encode(to encoder: any Swift.Encoder) throws
   public init(from decoder: any Swift.Decoder) throws
 }
+public struct ReceiptAdvertisement : Swift.Codable {
+  public var id: Swift.String?
+  public var date: Swift.String?
+  public var type: Swift.String?
+  public var title: Swift.String?
+  public var description: Swift.String?
+  public var brand: Swift.String?
+  public var brandUrl: Swift.String?
+  public var brandId: Swift.String?
+  public var image: Swift.String?
+  public var url: Swift.String?
+  public var action: Swift.String?
+  public var associatedContentType: Swift.String?
+  public var associatedContentId: Swift.String?
+  public var originatingDevice: Swift.String?
+  public var estimatedOriginatingDevice: Swift.String?
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
 extension RoveriOS.Rover {
   public enum Environment : Swift.String, Swift.Codable {
     case staging
@@ -538,7 +564,7 @@ extension RoveriOS.Rover {
   public var version: Swift.String {
     get
   }
-  public func configure(licenseKey: Swift.String, environment: RoveriOS.Rover.Environment = .staging, deviceId: Swift.String = "unknown", maxConcurrentCollections: Swift.Int = 4, suppressVersionNotice: Swift.Bool = false, callback: @escaping ([RoveriOS.Merchant], Swift.String?) -> ())
+  public func configure(licenseKey: Swift.String, environment: RoveriOS.Rover.Environment = .staging, deviceId: Swift.String = "unknown", maxConcurrentCollections: Swift.Int = 2, suppressVersionNotice: Swift.Bool = false, callback: @escaping ([RoveriOS.Merchant], Swift.String?) -> ())
   @available(iOS 13.0.0, *)
   public func configure(licenseKey: Swift.String, environment: RoveriOS.Rover.Environment = .staging, deviceId: Swift.String = "unknown", maxConcurrentCollections: Swift.Int = 4) async -> ([RoveriOS.Merchant], Swift.String?)
   public func collect(userId: Swift.String? = nil, account: Swift.String? = nil, password: Swift.String? = nil, cookiesBase64: Swift.String? = nil, merchantId: Swift.Int?, javascript: Foundation.Data? = nil, javascriptUrl: Swift.String? = nil, javascriptVersion: Swift.Int? = nil, fromDate: Foundation.Date, toDate: Foundation.Date? = nil, serviceGroupRequests: [RoveriOS.ServiceGroupRequest]? = nil, tier1BatchSize: Swift.Int = 16, tier2BatchSize: Swift.Int = 16, tier3BatchSize: Swift.Int = 16, receiptsBatchSize: Swift.Int = 8, collectItemInfo: Swift.Bool? = false, collectSourceData: Swift.Bool? = false, isEphemeral: Swift.Bool = false, isConnectionOnly: Swift.Bool = false, hasBackend: Swift.Bool = false, allowUserInteractionRequired: Swift.Bool = true, appInfo: Swift.String? = nil, featureFlags: [Swift.String]? = nil, overrideMimicDesktopIfPossible: Swift.Bool? = nil, overrideWebviewBlockImageLoading: Swift.Bool? = nil, delegate: RoveriOS.RoverDelegate)
@@ -560,10 +586,10 @@ extension RoveriOS.Rover {
   public func remove(connection: RoveriOS.Connection, _ callback: @escaping () -> ())
   @available(iOS 13.0.0, *)
   public func remove(connection: RoveriOS.Connection) async
-  public func edgePull(authorization: Swift.String?, requestsUrl: Swift.String, resultsUrl: Swift.String, receiptsUrl: Swift.String?, statusUrl: Swift.String?, debug: Swift.Bool, verboseErrors: Swift.Bool, permissiveResponses: Swift.Bool, routeAddress: Swift.String?, routePort: Swift.Int?, _ callback: @escaping (Swift.Int, Swift.String?) -> ())
+  public func edgePull(authorization: Swift.String?, requestsUrl: Swift.String, resultsUrl: Swift.String, receiptsUrl: Swift.String?, statusUrl: Swift.String?, debug: Swift.Bool, verboseErrors: Swift.Bool, permissiveResponses: Swift.Bool, intelligenceModelFlag: Swift.String?, userAgentTags: [Swift.String], routeAddress: Swift.String?, routePort: Swift.Int?, _ callback: @escaping (Swift.Int, Swift.String?) -> ())
   @available(iOS 13.0.0, *)
-  public func edgePull(authorization: Swift.String?, requestsUrl: Swift.String, resultsUrl: Swift.String, receiptsUrl: Swift.String?, statusUrl: Swift.String?, debug: Swift.Bool, verboseErrors: Swift.Bool, permissiveResponses: Swift.Bool, routeAddress: Swift.String?, routePort: Swift.Int?) async -> (Swift.Int, Swift.String?)
-  public func edgePush(authorization: Swift.String?, listenAddress: Swift.String?, listenPort: Swift.Int?, resultsUrl: Swift.String, receiptsUrl: Swift.String?, statusUrl: Swift.String?, debug: Swift.Bool, permissiveResponses: Swift.Bool, verboseErrors: Swift.Bool, routeAddress: Swift.String?, routePort: Swift.Int?, _ callback: @escaping (Swift.Int, Swift.String?) -> ())
+  public func edgePull(authorization: Swift.String?, requestsUrl: Swift.String, resultsUrl: Swift.String, receiptsUrl: Swift.String?, statusUrl: Swift.String?, debug: Swift.Bool, verboseErrors: Swift.Bool, permissiveResponses: Swift.Bool, intelligenceModelFlag: Swift.String?, userAgentTags: [Swift.String], routeAddress: Swift.String?, routePort: Swift.Int?) async -> (Swift.Int, Swift.String?)
+  public func edgePush(authorization: Swift.String?, listenAddress: Swift.String?, listenPort: Swift.Int?, resultsUrl: Swift.String, receiptsUrl: Swift.String?, statusUrl: Swift.String?, debug: Swift.Bool, permissiveResponses: Swift.Bool, verboseErrors: Swift.Bool, userAgentTags: [Swift.String], routeAddress: Swift.String?, routePort: Swift.Int?, _ callback: @escaping (Swift.Int, Swift.String?) -> ())
   @objc deinit
 }
 open class RoverDelegate {
