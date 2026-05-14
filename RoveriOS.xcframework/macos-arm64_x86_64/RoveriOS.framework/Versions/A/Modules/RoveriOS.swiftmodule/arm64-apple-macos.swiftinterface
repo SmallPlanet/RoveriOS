@@ -71,6 +71,8 @@ public enum MerchantId : Swift.Int, Swift.Codable, Swift.CaseIterable {
   case doordash
   case ubereats
   case tiktokshop
+  case deliveroo
+  case justeats
   case costco
   case target
   case chewyProduct
@@ -542,11 +544,29 @@ public struct ReceiptAdvertisement : Swift.Codable {
   public init(from decoder: any Swift.Decoder) throws
 }
 extension RoveriOS.Rover {
-  public enum Environment : Swift.String, Swift.Codable {
+  public enum Environment : Swift.String, Swift.Codable, Swift.CaseIterable {
     case staging
     case production
     public init?(rawValue: Swift.String)
+    public typealias AllCases = [RoveriOS.Rover.Environment]
     public typealias RawValue = Swift.String
+    nonisolated public static var allCases: [RoveriOS.Rover.Environment] {
+      get
+    }
+    public var rawValue: Swift.String {
+      get
+    }
+  }
+  public enum Locale : Swift.String, Swift.Codable, Swift.CaseIterable {
+    case us
+    case uk
+    case fr
+    public init?(rawValue: Swift.String)
+    public typealias AllCases = [RoveriOS.Rover.Locale]
+    public typealias RawValue = Swift.String
+    nonisolated public static var allCases: [RoveriOS.Rover.Locale] {
+      get
+    }
     public var rawValue: Swift.String {
       get
     }
@@ -564,7 +584,7 @@ extension RoveriOS.Rover {
   public var version: Swift.String {
     get
   }
-  public func configure(licenseKey: Swift.String, environment: RoveriOS.Rover.Environment = .staging, deviceId: Swift.String = "unknown", maxConcurrentCollections: Swift.Int = 2, suppressVersionNotice: Swift.Bool = false, callback: @escaping ([RoveriOS.Merchant], Swift.String?) -> ())
+  public func configure(licenseKey: Swift.String, environment: RoveriOS.Rover.Environment = .staging, locale: RoveriOS.Rover.Locale = Locale.us, deviceId: Swift.String = "unknown", maxConcurrentCollections: Swift.Int = 2, suppressVersionNotice: Swift.Bool = false, callback: @escaping ([RoveriOS.Merchant], Swift.String?) -> ())
   @available(iOS 13.0.0, *)
   public func configure(licenseKey: Swift.String, environment: RoveriOS.Rover.Environment = .staging, deviceId: Swift.String = "unknown", maxConcurrentCollections: Swift.Int = 4) async -> ([RoveriOS.Merchant], Swift.String?)
   public func collect(userId: Swift.String? = nil, account: Swift.String? = nil, password: Swift.String? = nil, cookiesBase64: Swift.String? = nil, merchantId: Swift.Int?, javascript: Foundation.Data? = nil, javascriptUrl: Swift.String? = nil, javascriptVersion: Swift.Int? = nil, fromDate: Foundation.Date, toDate: Foundation.Date? = nil, serviceGroupRequests: [RoveriOS.ServiceGroupRequest]? = nil, tier1BatchSize: Swift.Int = 16, tier2BatchSize: Swift.Int = 16, tier3BatchSize: Swift.Int = 16, receiptsBatchSize: Swift.Int = 8, collectItemInfo: Swift.Bool? = false, collectSourceData: Swift.Bool? = false, isEphemeral: Swift.Bool = false, isConnectionOnly: Swift.Bool = false, hasBackend: Swift.Bool = false, allowUserInteractionRequired: Swift.Bool = true, appInfo: Swift.String? = nil, featureFlags: [Swift.String]? = nil, overrideMimicDesktopIfPossible: Swift.Bool? = nil, overrideWebviewBlockImageLoading: Swift.Bool? = nil, delegate: RoveriOS.RoverDelegate)
@@ -629,3 +649,6 @@ extension RoveriOS.MerchantId : Swift.RawRepresentable {}
 extension RoveriOS.Rover.Environment : Swift.Equatable {}
 extension RoveriOS.Rover.Environment : Swift.Hashable {}
 extension RoveriOS.Rover.Environment : Swift.RawRepresentable {}
+extension RoveriOS.Rover.Locale : Swift.Equatable {}
+extension RoveriOS.Rover.Locale : Swift.Hashable {}
+extension RoveriOS.Rover.Locale : Swift.RawRepresentable {}
