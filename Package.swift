@@ -13,8 +13,8 @@ let package = Package(
     targets: [
         .binaryTarget(
             name: "RoveriOS",
-            url: "https://github.com/SmallPlanet/RoveriOS/releases/download/v0.4.56/RoveriOS.xcframework.zip",
-            checksum: "c0b210f394814b10fba901ec8153ac7d8083ad2e90c97de0e3a60905f9ec2a5e"
+            url: "https://github.com/SmallPlanet/RoveriOS/releases/download/v0.4.57/RoveriOS.xcframework.zip",
+            checksum: "b2a7d0dd3dca456d986afca1843f8e8c4a0afa8195f9061d342d3b7e9f277f94"
         )
     ]
 )

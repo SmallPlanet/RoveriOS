@@ -63,8 +63,10 @@ public enum MerchantId : Swift.Int, Swift.Codable, Swift.CaseIterable {
   case amazon
   case instacart
   case kroger
+  case publix
   case starbucks
   case walmart
+  case samsclub
   case chewy
   case walgreens
   case cvs
@@ -242,6 +244,15 @@ public struct WildfireMerchant : Swift.Codable {
   public var maxRateKind: Swift.String
   public var maxRateAmount: Swift.String
   public var maxRateCurrency: Swift.String?
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct WildfireCoupon : Swift.Codable {
+  public var id: Swift.Int
+  public var merchantId: Swift.Int
+  public var description: Swift.String
+  public var exclusions: Swift.String
+  public var code: Swift.String
   public func encode(to encoder: any Swift.Encoder) throws
   public init(from decoder: any Swift.Decoder) throws
 }
@@ -632,9 +643,9 @@ extension RoveriOS.Rover {
   @available(iOS 13.0.0, *)
   public func edgePull(authorization: Swift.String?, requestsUrl: Swift.String, resultsUrl: Swift.String, receiptsUrl: Swift.String?, statusUrl: Swift.String?, proxy: Swift.String?, debug: Swift.Bool, verboseErrors: Swift.Bool, permissiveResponses: Swift.Bool, intelligenceModelFlag: Swift.String?, userAgentTags: [Swift.String], routeAddress: Swift.String?, routePort: Swift.Int?) async -> (Swift.Int, Swift.String?)
   public func edgePush(authorization: Swift.String?, listenAddress: Swift.String?, listenPort: Swift.Int?, resultsUrl: Swift.String, receiptsUrl: Swift.String?, statusUrl: Swift.String?, proxy: Swift.String?, debug: Swift.Bool, permissiveResponses: Swift.Bool, verboseErrors: Swift.Bool, userAgentTags: [Swift.String], routeAddress: Swift.String?, routePort: Swift.Int?, _ callback: @escaping (Swift.Int, Swift.String?) -> ())
-  public func wildfire(ignoreCache: Swift.Bool = false, callback: @escaping (_ personal: [RoveriOS.WildfireMerchant]?, _ featuredAll: [RoveriOS.WildfireMerchant]?, _ featuredPriority: [RoveriOS.WildfireMerchant]?, _ error: Swift.String?) -> ())
+  public func wildfire(ignoreCache: Swift.Bool = false, callback: @escaping (_ personal: [RoveriOS.WildfireMerchant]?, _ personalCoupons: [RoveriOS.WildfireCoupon]?, _ featuredAll: [RoveriOS.WildfireMerchant]?, _ featuredPriority: [RoveriOS.WildfireMerchant]?, _ error: Swift.String?) -> ())
   @available(iOS 13.0.0, *)
-  public func wildfire() async -> ([RoveriOS.WildfireMerchant]?, [RoveriOS.WildfireMerchant]?, [RoveriOS.WildfireMerchant]?, Swift.String?)
+  public func wildfire(ignoreCache: Swift.Bool = false) async -> ([RoveriOS.WildfireMerchant]?, [RoveriOS.WildfireCoupon]?, [RoveriOS.WildfireMerchant]?, [RoveriOS.WildfireMerchant]?, Swift.String?)
   public func localDirectories(callback: @escaping (_ documentsDir: Swift.String, _ cacheDir: Swift.String) -> ())
   @available(iOS 13.0.0, *)
   public func localDirectories() async -> (Swift.String, Swift.String)
@@ -648,6 +659,7 @@ open class RoverDelegate {
   open func roverAnalyticsEvent(name: Swift.String, parameters: [Swift.String : Swift.String])
   open func roverHasStatus(sessionUUID: Swift.String, progress: Swift.Double, stepProgress: Swift.Double, currentStep: Swift.Int, maxSteps: Swift.Int, serviceGroupStatus: [RoveriOS.ScrapeServiceGroupStatus], merchantVersion: Swift.String?, tagLog: [Swift.String], userTag: Swift.String)
   open func roverAccountDidLogin(sessionUUID: Swift.String, oldAccount: Swift.String, newAccount: Swift.String, password: Swift.String, cookiesBase64: Swift.String?, wasUserInteractionRequired: Swift.Bool, callback: @escaping (_ error: Swift.String?, _ appInfo: Swift.String?) -> ())
+  open func roverIMAPDidConnect(sessionUUID: Swift.String, account: Swift.String, appPassword: Swift.String)
   open func roverRequestDownload(url: Swift.String, callback: @escaping (_ error: Swift.String?, _ data: Foundation.Data?) -> ())
   open func roverPullT1(sessionUUID: Swift.String, serviceGroup: Swift.String, callback: @escaping (_ error: Swift.String?, _ appInfo: Swift.String?) -> ())
   open func roverPushT1(sessionUUID: Swift.String, serviceGroup: Swift.String, orders: [Swift.String], callback: @escaping (_ error: Swift.String?, _ appInfo: Swift.String?) -> ())
