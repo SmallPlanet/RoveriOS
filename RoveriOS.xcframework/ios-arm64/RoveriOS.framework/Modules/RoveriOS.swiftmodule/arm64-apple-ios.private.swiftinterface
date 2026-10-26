@@ -67,6 +67,9 @@ public enum MerchantId : Swift.Int, Swift.Codable, Swift.CaseIterable {
   case starbucks
   case walmart
   case samsclub
+  case target
+  case shein
+  case temu
   case chewy
   case walgreens
   case cvs
@@ -77,7 +80,6 @@ public enum MerchantId : Swift.Int, Swift.Codable, Swift.CaseIterable {
   case deliveroo
   case justeats
   case costco
-  case target
   case chewyProduct
   case unitedHealthcare
   case aetna
@@ -201,8 +203,8 @@ public struct ScrapeRequest : Swift.Codable {
   public var cookiesBase64: Swift.String?
   public var merchantId: Swift.Int?
   public var javascript: Foundation.Data?
-  public let javascriptUrl: Swift.String?
-  public let javascriptVersion: Swift.Int?
+  public var javascriptUrl: Swift.String?
+  public var javascriptVersion: Swift.Int?
   public var fromDate: Foundation.Date?
   public var toDate: Foundation.Date?
   public let serviceGroupRequests: [RoveriOS.ServiceGroupRequest]?
@@ -227,6 +229,8 @@ public struct ScrapeRequest : Swift.Codable {
   public var overrideWebviewBlockImageLoading: Swift.Bool?
   public var allowServerInteractionRequired: Swift.Bool?
   public var roverLicense: Swift.String?
+  public var debugPath: Swift.String?
+  public var debugPrintPath: Swift.String?
   public init(delegateUUID: Swift.String, userId: Swift.String, applicationId: Swift.String, account: Swift.String, password: Swift.String?, cookiesBase64: Swift.String?, merchantId: Swift.Int?, javascript: Foundation.Data?, javascriptUrl: Swift.String?, javascriptVersion: Swift.Int?, fromDate: Foundation.Date?, toDate: Foundation.Date?, serviceGroupRequests: [RoveriOS.ServiceGroupRequest]?, tier1BatchSize: Swift.Int?, tier2BatchSize: Swift.Int?, tier3BatchSize: Swift.Int?, receiptsBatchSize: Swift.Int?, collectItemInfo: Swift.Bool?, collectSourceData: Swift.Bool?, isEphemeral: Swift.Bool?, isConnectionOnly: Swift.Bool?, hasBackend: Swift.Bool?, allowUserInteractionRequired: Swift.Bool?, exclusivityId: Swift.Int?, extraInfo: [Swift.String]?, appInfo: Swift.String?, featureFlags: [Swift.String]?, proxy: Swift.String?, isUnitTest: Swift.Bool?, isBackgroundAppRefresh: Swift.Int, overrideMimicDesktopIfPossible: Swift.Bool?, overrideWebviewBlockImageLoading: Swift.Bool?, allowServerInteractionRequired: Swift.Bool?, roverLicense: Swift.String?)
   public func encode(to encoder: any Swift.Encoder) throws
   public init(from decoder: any Swift.Decoder) throws
@@ -406,6 +410,7 @@ public struct Receipt : Swift.Codable {
   public var deliveryDistance: Swift.String?
   public var deliveryDuration: Swift.String?
   public var discounts: Swift.String?
+  public var credits: Swift.String?
   public var giftCards: Swift.String?
   public var tip: Swift.String?
   public var currency: Swift.String?
@@ -492,6 +497,9 @@ public struct ReceiptAIConversationMessagePart : Swift.Codable {
   public var imageHeight: Swift.String?
   public var imageGenerator: Swift.String?
   public var text: Swift.String?
+  public var context0: Swift.String?
+  public var context1: Swift.String?
+  public var context2: Swift.String?
   public func encode(to encoder: any Swift.Encoder) throws
   public init(from decoder: any Swift.Decoder) throws
 }

@@ -22,70 +22,70 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			hf0+tU2R5mvZiDyl9jD3kkjRHRBKK8c2XcpnzNeYVig=
+			dfTMtIDAI4ar5ARVpfwDTbDwvo1G4sSIvjHxFXxDJB8=
 			</data>
 		</dict>
 		<key>Modules/RoveriOS.swiftmodule/arm64-apple-macos.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			isZN1E7F7WZbPNLMTN7RlM/ou6aWLbt1qah2ehtIvnA=
+			KnNdM/L1t9j4r7KxFoyAy7mk2ix1JEKIAW1BIznHl5Q=
 			</data>
 		</dict>
 		<key>Modules/RoveriOS.swiftmodule/arm64-apple-macos.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			ceeWa46j/SOlpygNYH0YLLTcYZMMj/5Pu+0jVzrwy+8=
+			UtWmDV10SbqtD0OBDMLuNKrFsKrwruDj6u5nCxXHwI0=
 			</data>
 		</dict>
 		<key>Modules/RoveriOS.swiftmodule/arm64-apple-macos.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			isZN1E7F7WZbPNLMTN7RlM/ou6aWLbt1qah2ehtIvnA=
+			KnNdM/L1t9j4r7KxFoyAy7mk2ix1JEKIAW1BIznHl5Q=
 			</data>
 		</dict>
 		<key>Modules/RoveriOS.swiftmodule/arm64-apple-macos.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			PRghR6e3fSRNmPD+B0lZc9XvBfyV66Zj6cSVQpy59D0=
+			NjU2cGbMmcVYoMpkHuKcwp2LVzwQkzoZR0uKzPViLAw=
 			</data>
 		</dict>
 		<key>Modules/RoveriOS.swiftmodule/x86_64-apple-macos.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			hf0+tU2R5mvZiDyl9jD3kkjRHRBKK8c2XcpnzNeYVig=
+			dfTMtIDAI4ar5ARVpfwDTbDwvo1G4sSIvjHxFXxDJB8=
 			</data>
 		</dict>
 		<key>Modules/RoveriOS.swiftmodule/x86_64-apple-macos.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			XlBI/oKizyhnW5+eE1ScEn2XWqC4KC02PsVALX8ILos=
+			ho2I0d4ykVjulFSNCeIxloD5hs2mfLlba5pBYGb0VKY=
 			</data>
 		</dict>
 		<key>Modules/RoveriOS.swiftmodule/x86_64-apple-macos.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			/PpDd5zojM+XZHDteJds5lDe1uFJaTHYPMk75qA+zZ0=
+			nc9xABGMQMe4FJIhaXnHqnwMlsPp9B5OuEDXHqcwv3A=
 			</data>
 		</dict>
 		<key>Modules/RoveriOS.swiftmodule/x86_64-apple-macos.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			XlBI/oKizyhnW5+eE1ScEn2XWqC4KC02PsVALX8ILos=
+			ho2I0d4ykVjulFSNCeIxloD5hs2mfLlba5pBYGb0VKY=
 			</data>
 		</dict>
 		<key>Modules/RoveriOS.swiftmodule/x86_64-apple-macos.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			I8S4oz/f0EeLt5Gb8miV8KkZAKI3pAPJ//IIUxrgjYQ=
+			+hiRoaSL1Aye6ggxYIcXdTFDXZ7keTkQUpR89rcjygQ=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
