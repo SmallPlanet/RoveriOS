@@ -22,7 +22,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			dfTMtIDAI4ar5ARVpfwDTbDwvo1G4sSIvjHxFXxDJB8=
+			7lq4HFU0WR+JmDJWnRfca+E56J/Pq1Vf5rDS3W65zQc=
 			</data>
 		</dict>
 		<key>Modules/RoveriOS.swiftmodule/arm64-apple-macos.private.swiftinterface</key>
@@ -50,14 +50,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			NjU2cGbMmcVYoMpkHuKcwp2LVzwQkzoZR0uKzPViLAw=
+			NI/B9x53zt55au5Ma6JybOcv84tDdJQJFavJMyZXa7U=
 			</data>
 		</dict>
 		<key>Modules/RoveriOS.swiftmodule/x86_64-apple-macos.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			dfTMtIDAI4ar5ARVpfwDTbDwvo1G4sSIvjHxFXxDJB8=
+			7lq4HFU0WR+JmDJWnRfca+E56J/Pq1Vf5rDS3W65zQc=
 			</data>
 		</dict>
 		<key>Modules/RoveriOS.swiftmodule/x86_64-apple-macos.private.swiftinterface</key>
@@ -85,7 +85,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			+hiRoaSL1Aye6ggxYIcXdTFDXZ7keTkQUpR89rcjygQ=
+			LcXoyKMSLioqLTEN8yeAbkx+UAj7ulftGkApUW/0q/I=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

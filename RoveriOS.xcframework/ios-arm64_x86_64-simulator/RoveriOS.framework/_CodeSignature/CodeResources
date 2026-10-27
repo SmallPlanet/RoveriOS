@@ -14,7 +14,7 @@
 		</data>
 		<key>Modules/RoveriOS.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		IQW8OkR/U/w/7FHnC7Hkb0/8Y4E=
+		utS/g6il3OAlSbNpf+F+mM3PNU8=
 		</data>
 		<key>Modules/RoveriOS.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
@@ -30,11 +30,11 @@
 		</data>
 		<key>Modules/RoveriOS.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		kQLMO6ombPxrWa+dUemLMe/s17s=
+		/Y+hslejSYNSDchj9CZglhESncE=
 		</data>
 		<key>Modules/RoveriOS.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		IQW8OkR/U/w/7FHnC7Hkb0/8Y4E=
+		utS/g6il3OAlSbNpf+F+mM3PNU8=
 		</data>
 		<key>Modules/RoveriOS.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
@@ -50,7 +50,7 @@
 		</data>
 		<key>Modules/RoveriOS.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		HayhvAzD/5SRWAdX3aRxqlq32VY=
+		P4mlp01QzlE15ZkP4NcrPj8Bnt4=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -70,7 +70,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			G+pzUS9Zs1I+OJT4XicKws0EZE8pn7dMYbexOPDZP7E=
+			7UvDLLkEbSFaWBDJ16AS95hAYlrXIQqNyLKZzBiAgfI=
 			</data>
 		</dict>
 		<key>Modules/RoveriOS.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
@@ -98,14 +98,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			vrihk6KqMs67jIc+E3OFbkcFlDmZqpmcZI3eZGkosD4=
+			+tOgEBXuACy0eYUFkyEXdgbK4WLUS7obdzW/aIK2Zz0=
 			</data>
 		</dict>
 		<key>Modules/RoveriOS.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			G+pzUS9Zs1I+OJT4XicKws0EZE8pn7dMYbexOPDZP7E=
+			7UvDLLkEbSFaWBDJ16AS95hAYlrXIQqNyLKZzBiAgfI=
 			</data>
 		</dict>
 		<key>Modules/RoveriOS.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
@@ -133,7 +133,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			ct/eXiY3An70Lwh64O7KaEVMOclStKEn7D4L0pip/fE=
+			RGvn2SuI2d+zjPBcntF1XjRbJ7KgdPI5jHS4Sa8/Qnw=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
